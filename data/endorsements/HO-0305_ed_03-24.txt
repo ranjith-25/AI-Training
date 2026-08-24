@@ -1,0 +1,123 @@
+================================================================================
+HOMEOWNERS POLICY ENDORSEMENT
+================================================================================
+Form Number:      HO-0305
+Edition:          03-24
+Effective Date:   March 1, 2024
+Policy Line:      Homeowners
+Insurer:          National Heritage Insurance Company
+State Filing:     Multi-State — All Jurisdictions
+================================================================================
+
+ENDORSEMENT TITLE:  Ordinance or Law Coverage Endorsement
+
+This endorsement modifies the insurance provided under the Homeowners Policy
+to which it is attached. It provides coverage for the increased costs an
+insured may incur when repairing or rebuilding a damaged dwelling to comply
+with current building codes, ordinances, or laws that were enacted after the
+original construction of the dwelling.
+
+SECTION I — SCOPE AND PURPOSE
+
+Following a covered loss to the dwelling, the enforcement of building codes or
+ordinances may require the insured to incur costs beyond the direct physical
+damage. This endorsement provides three categories of additional coverage:
+
+  (a) Coverage for the loss in value of the undamaged portion of the dwelling
+      when a building ordinance requires demolition of the entire structure;
+  (b) Coverage for the cost of demolishing and clearing the undamaged portion;
+  (c) Coverage for the increased cost of construction to meet current codes.
+
+The combined limit of liability for all three categories shall not exceed the
+Ordinance or Law Coverage Limit stated on the Declarations page, or 10% of
+the Coverage A limit, whichever is greater.
+
+SECTION II — DEFINITIONS
+
+(a) "Building Code" means any ordinance, law, or regulation governing the
+    construction, repair, renovation, or demolition of a building, including
+    zoning laws, environmental regulations, and accessibility standards such
+    as the Americans with Disabilities Act (ADA).
+
+(b) "Functionally Equivalent" means construction that serves the same purpose
+    and provides the same utility as the original, using currently available
+    materials and methods, even if such materials differ from those originally
+    used.
+
+(c) "Increased Cost of Construction" means the additional expense, beyond
+    the cost of repairing or replacing the damaged portion, required to bring
+    the repaired or rebuilt dwelling into compliance with current building
+    codes.
+
+SECTION III — COVERAGE MODIFICATIONS
+
+A. Loss of Undamaged Portion. If a building code requires the demolition of
+   the undamaged portion of the dwelling, the Company will pay for the loss
+   in value of that undamaged portion, calculated as the replacement cost of
+   the undamaged portion less its salvage value.
+
+B. Demolition and Clearing Costs. The Company will pay the reasonable costs
+   of demolishing and clearing the site of the undamaged portion, including
+   debris removal and disposal fees required by environmental regulations.
+
+C. Increased Construction Costs. The Company will pay the additional cost to
+   repair, rebuild, or construct the dwelling using methods and materials
+   required by the current building code, above the cost of restoring the
+   dwelling to its pre-loss condition. This includes upgrades to electrical,
+   plumbing, insulation, and structural systems mandated by code.
+
+SECTION IV — EXCLUSIONS TABLE
+
+The following exclusions apply to coverage provided under this endorsement.
+
++------+-------------------------------------------+--------------------------------------+
+| Code | Exclusion Title                           | Description                          |
++------+-------------------------------------------+--------------------------------------+
+| E-19 | Cosmetic-Only Ordinance Upgrades          | Costs incurred solely to meet        |
+|      |                                           | aesthetic or cosmetic requirements    |
+|      |                                           | imposed by a homeowners association,  |
+|      |                                           | architectural review board, or        |
+|      |                                           | historic preservation commission,     |
+|      |                                           | unless such requirements are mandated |
+|      |                                           | by a governmental building code. This |
+|      |                                           | exclusion applies to requirements     |
+|      |                                           | such as matching exterior paint       |
+|      |                                           | colors, specific roofing materials    |
+|      |                                           | for appearance, or decorative fencing.|
++------+-------------------------------------------+--------------------------------------+
+| E-20 | Demolition of Undamaged Portions Not      | Costs of demolishing or clearing     |
+|      | Required by Governmental Authority        | portions of the dwelling that are not |
+|      |                                           | required to be demolished by a        |
+|      |                                           | governmental authority under an       |
+|      |                                           | applicable building code. Voluntary   |
+|      |                                           | demolition, owner-elected upgrades,   |
+|      |                                           | or demolition requested by a private  |
+|      |                                           | party (e.g., contractor recommenda-   |
+|      |                                           | tion) are not covered under this      |
+|      |                                           | endorsement.                          |
++------+-------------------------------------------+--------------------------------------+
+
+SECTION V — CONDITIONS
+
+1. Duty to Comply. The insured must make a good-faith effort to comply with
+   all applicable building codes when repairing or rebuilding. If the insured
+   elects not to rebuild, the Company shall pay the lesser of the increased
+   cost of construction or the actual cash value of the loss.
+
+2. Time Limit for Construction. Increased construction costs are covered only
+   if construction begins within two (2) years of the date of the covered loss
+   and is completed within a reasonable time thereafter.
+
+3. Prior Violations. This endorsement does not cover costs to correct
+   pre-existing code violations that existed before the date of the covered
+   loss.
+
+4. Multiple Codes. Where multiple building codes apply, the Company will pay
+   the cost to meet the most restrictive applicable code, but not to exceed
+   the Ordinance or Law Coverage Limit.
+
+All other terms and conditions of the policy remain unchanged.
+
+================================================================================
+END OF ENDORSEMENT HO-0305 ed. 03-24
+================================================================================

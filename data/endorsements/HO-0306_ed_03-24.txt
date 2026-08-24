@@ -1,0 +1,134 @@
+================================================================================
+HOMEOWNERS POLICY ENDORSEMENT
+================================================================================
+Form Number:      HO-0306
+Edition:          03-24
+Effective Date:   June 1, 2024
+Policy Line:      Homeowners
+Insurer:          National Heritage Insurance Company
+State Filing:     Multi-State — All Jurisdictions
+================================================================================
+
+ENDORSEMENT TITLE:  Earth Movement Endorsement
+
+This endorsement modifies the insurance provided under the Homeowners Policy
+to which it is attached. It provides limited coverage for direct physical
+loss to the dwelling and personal property caused by earth movement,
+subject to the terms, exclusions, and conditions stated below.
+
+SECTION I — SCOPE AND PURPOSE
+
+Earth movement includes, but is not limited to, earthquake, landslide,
+mudflow, mudslide, sinkhole collapse, subsidence, and any other earth
+movement (including earth movement resulting from volcanic activity).
+Coverage under this endorsement is subject to a separate Earth Movement
+Deductible stated on the Declarations page, expressed as a percentage
+of the Coverage A limit (typically 5%, 10%, or 15%).
+
+This endorsement does not replace or duplicate earthquake coverage provided
+under a standalone earthquake policy. If the insured maintains a separate
+earthquake policy, coverage under this endorsement is excess of amounts
+payable under that policy.
+
+SECTION II — DEFINITIONS
+
+(a) "Earth Movement" means any natural or human-caused shifting, settling,
+    cracking, sinking, rising, or lateral displacement of earth, soil, or
+    rock, whether sudden or gradual.
+
+(b) "Sinkhole Collapse" means the sudden settlement or collapse of earth
+    into a subsurface void created by the dissolution of underlying limestone
+    or other soluble rock (karst geology).
+
+(c) "Zone A Karst Terrain" means geographic areas identified by the state
+    geological survey as having a high probability of sinkhole activity due
+    to the presence of carbonate bedrock at shallow depth. The insured
+    Declarations page identifies whether the dwelling premises are located
+    in Zone A.
+
+(d) "Mine Subsidence" means lateral or vertical ground movement caused by
+    the collapse of man-made underground mines, including coal mines,
+    limestone quarries, and salt mines.
+
+SECTION III — COVERAGE MODIFICATIONS
+
+A. Coverage A — Dwelling. Direct physical loss to the dwelling caused by
+   earth movement is covered up to the Coverage A limit, less the Earth
+   Movement Deductible. The Company will pay the cost to repair or replace
+   the damaged dwelling at replacement cost, provided the insured rebuilds
+   on the same premises.
+
+B. Coverage B — Other Structures. Loss to other structures (detached garages,
+   fences, retaining walls) caused by earth movement is covered up to the
+   Coverage B limit, less the Earth Movement Deductible.
+
+C. Coverage C — Personal Property. Loss to personal property caused by earth
+   movement is covered at actual cash value, unless the insured has
+   purchased the Replacement Cost on Personal Property endorsement.
+
+D. Additional Living Expense. If earth movement renders the dwelling
+   uninhabitable, the Company will pay additional living expenses under
+   Coverage D for up to twelve (12) months.
+
+SECTION IV — EXCLUSIONS TABLE
+
+The following exclusions apply to coverage provided under this endorsement.
+
++------+-------------------------------------------+--------------------------------------+
+| Code | Exclusion Title                           | Description                          |
++------+-------------------------------------------+--------------------------------------+
+| E-21 | Sinkhole Losses in Zone A Karst Terrain   | Loss or damage caused by sinkhole    |
+|      |                                           | collapse at dwelling premises         |
+|      |                                           | located in Zone A Karst Terrain, as   |
+|      |                                           | identified on the Declarations page.  |
+|      |                                           | Coverage for Zone A properties may    |
+|      |                                           | be available through the state        |
+|      |                                           | sinkhole insurance program. This      |
+|      |                                           | exclusion does not apply to earth     |
+|      |                                           | movement other than sinkhole          |
+|      |                                           | collapse.                             |
++------+-------------------------------------------+--------------------------------------+
+| E-22 | Volcanic Eruption                         | Loss or damage caused directly by    |
+|      |                                           | volcanic eruption, including lava     |
+|      |                                           | flow, volcanic blast, airborne        |
+|      |                                           | volcanic debris, ash, dust, or        |
+|      |                                           | particulate matter, and volcanic      |
+|      |                                           | gases. This exclusion applies even    |
+|      |                                           | if the volcanic activity triggers     |
+|      |                                           | secondary earth movement such as      |
+|      |                                           | landslide or mudflow.                 |
++------+-------------------------------------------+--------------------------------------+
+| E-23 | Mine Subsidence                           | Loss or damage caused by mine        |
+|      |                                           | subsidence, unless the insured has    |
+|      |                                           | purchased coverage through the state  |
+|      |                                           | mine subsidence insurance fund. If    |
+|      |                                           | state fund coverage applies, this     |
+|      |                                           | endorsement is excess of the state    |
+|      |                                           | fund limits.                          |
++------+-------------------------------------------+--------------------------------------+
+
+SECTION V — CONDITIONS
+
+1. Inspection Requirement. After any earth movement event, the insured must
+   arrange for a structural inspection by a licensed engineer within sixty
+   (60) days. The Company may deny the claim if the insured fails to obtain
+   the inspection.
+
+2. Multiple Events. If multiple earth movement events occur within a
+   seventy-two (72) hour period, they shall be treated as a single
+   occurrence for purposes of the deductible.
+
+3. Land Stabilization. The Company will pay reasonable costs of land
+   stabilization (e.g., grouting, underpinning) to prevent further damage
+   to the dwelling, up to $25,000 per occurrence.
+
+4. Government-Ordered Evacuation. If a governmental authority orders
+   evacuation of the dwelling due to imminent earth movement, the Company
+   will pay additional living expenses under Coverage D beginning on the
+   date of the evacuation order.
+
+All other terms and conditions of the policy remain unchanged.
+
+================================================================================
+END OF ENDORSEMENT HO-0306 ed. 03-24
+================================================================================

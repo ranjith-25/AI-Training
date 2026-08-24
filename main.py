@@ -6,6 +6,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.document import router as document_router
+from api.search import router as search_router
 
 load_dotenv()
 
@@ -38,3 +39,4 @@ def read_root():
 
 
 app.include_router(document_router)
+app.include_router(search_router)

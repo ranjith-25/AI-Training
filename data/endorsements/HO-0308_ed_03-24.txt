@@ -1,0 +1,132 @@
+================================================================================
+HOMEOWNERS POLICY ENDORSEMENT
+================================================================================
+Form Number:      HO-0308
+Edition:          03-24
+Effective Date:   September 1, 2024
+Policy Line:      Dwelling Fire
+Insurer:          National Heritage Insurance Company
+State Filing:     Multi-State — All Jurisdictions
+================================================================================
+
+ENDORSEMENT TITLE:  Equipment Breakdown Endorsement
+
+This endorsement modifies the insurance provided under the Dwelling Fire
+Policy to which it is attached. It provides coverage for direct physical
+loss caused by the sudden and accidental breakdown of covered equipment
+located on the insured premises, subject to the terms, exclusions, and
+conditions stated below.
+
+SECTION I — SCOPE AND PURPOSE
+
+Standard property policies exclude loss caused by mechanical or electrical
+breakdown of equipment. This endorsement restores coverage for such losses
+when the breakdown is sudden and accidental, as defined herein. Coverage
+applies to permanently installed equipment serving the insured dwelling,
+including heating, ventilation, and air conditioning (HVAC) systems,
+electrical panels, water heaters, well pumps, and built-in appliances.
+
+The Equipment Breakdown Coverage Limit is equal to the Coverage A limit
+unless a separate limit is shown on the Declarations page. The deductible
+applicable to this endorsement is $500 or the policy deductible, whichever
+is greater.
+
+SECTION II — DEFINITIONS
+
+(a) "Covered Equipment" means any equipment listed on the Equipment Schedule
+    attached to this endorsement, or if no schedule is attached, any
+    permanently installed mechanical or electrical equipment that serves
+    the dwelling and is owned by the insured. Portable or plug-in appliances
+    (e.g., window air-conditioning units, portable heaters, kitchen counter
+    appliances) are not covered equipment unless specifically scheduled.
+
+(b) "Breakdown" means the sudden and accidental failure of covered equipment
+    that manifests as physical damage requiring repair or replacement. A
+    breakdown must originate within the equipment itself and must not result
+    from an external cause such as fire, lightning, windstorm, or vandalism
+    (which are covered under the base policy).
+
+(c) "Expediting Expenses" means reasonable extra costs to make temporary
+    repairs or to expedite permanent repairs, including overtime labor and
+    express shipping of replacement parts.
+
+SECTION III — COVERAGE MODIFICATIONS
+
+A. Equipment Repair or Replacement. The Company will pay the cost to repair
+   or replace covered equipment that has suffered a breakdown, at replacement
+   cost, less the applicable deductible.
+
+B. Spoilage Coverage. If a breakdown of refrigeration or climate-control
+   equipment causes spoilage of perishable goods (e.g., food, medicine),
+   the Company will pay up to $2,500 per occurrence for spoiled goods.
+
+C. Expediting Expenses. The Company will pay expediting expenses up to
+   $5,000 per occurrence to restore the function of the covered equipment
+   as quickly as possible.
+
+D. Utility Interruption. If a breakdown at a utility provider's facility
+   causes a covered equipment breakdown at the insured premises, coverage
+   applies as if the breakdown occurred on-premises, provided the utility
+   interruption lasts more than twenty-four (24) hours.
+
+SECTION IV — EXCLUSIONS TABLE
+
+The following exclusions apply to coverage provided under this endorsement.
+
++------+-------------------------------------------+--------------------------------------+
+| Code | Exclusion Title                           | Description                          |
++------+-------------------------------------------+--------------------------------------+
+| E-27 | Wear and Tear, Deterioration, or          | Loss or damage caused by or          |
+|      | Depletion                                 | resulting from wear and tear,        |
+|      |                                           | gradual deterioration, rust,         |
+|      |                                           | corrosion, erosion, settling,        |
+|      |                                           | depletion, or exhaustion of a        |
+|      |                                           | component's useful life. Routine     |
+|      |                                           | maintenance, filter replacement,     |
+|      |                                           | lubrication, and calibration are     |
+|      |                                           | the responsibility of the insured    |
+|      |                                           | and are not covered events.          |
++------+-------------------------------------------+--------------------------------------+
+| E-28 | Equipment Not on the Schedule             | Loss or damage to equipment that is  |
+|      |                                           | not listed on the Equipment Schedule |
+|      |                                           | (if a schedule is attached) or that  |
+|      |                                           | does not meet the definition of      |
+|      |                                           | Covered Equipment. This includes     |
+|      |                                           | portable appliances, recreational    |
+|      |                                           | equipment, and equipment owned by    |
+|      |                                           | a tenant rather than the insured.    |
++------+-------------------------------------------+--------------------------------------+
+| E-29 | Cosmetic Damage Only                      | Damage to the appearance of covered  |
+|      |                                           | equipment (scratches, dents,         |
+|      |                                           | discoloration) that does not impair  |
+|      |                                           | the equipment's function or          |
+|      |                                           | operation. Cosmetic damage without   |
+|      |                                           | mechanical or electrical failure     |
+|      |                                           | is not a covered breakdown.          |
++------+-------------------------------------------+--------------------------------------+
+
+SECTION V — CONDITIONS
+
+1. Maintenance Obligation. The insured must maintain all covered equipment
+   in accordance with manufacturer recommendations. Failure to perform
+   routine maintenance may void coverage for a specific piece of equipment
+   if the Company can demonstrate that the breakdown was directly caused by
+   the lack of maintenance.
+
+2. Professional Repair. Repairs to covered equipment must be performed by
+   a licensed and qualified technician. The Company may deny the claim if
+   the insured attempts unauthorized self-repair that worsens the damage.
+
+3. Salvage. The Company has the right to inspect and retain any equipment
+   or parts replaced under this endorsement. The insured must not dispose
+   of damaged equipment without the Company's written consent.
+
+4. Efficiency Standards. When equipment is replaced, the replacement must
+   meet or exceed current energy-efficiency standards (e.g., ENERGY STAR)
+   but need not match the brand or model of the original equipment.
+
+All other terms and conditions of the policy remain unchanged.
+
+================================================================================
+END OF ENDORSEMENT HO-0308 ed. 03-24
+================================================================================

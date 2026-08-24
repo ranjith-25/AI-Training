@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q1",
+    "question": "Under HO-0304 ed. 03-24, does exclusion E-17 apply to water damage caused by a burst interior supply line?",
+    "expected_answer": "No. E-17 excludes flood, surface water, and overflow of a body of water. A burst interior supply line is explicitly stated as NOT flood or surface water and is NOT subject to this exclusion.",
+    "expected_form": "HO-0304",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-17",
+    "category": "exclusion_attachment",
+    "answerable": true
+  },
+  {
+    "id": "Q2",
+    "question": "Is water damage from a sewer backup covered under HO-0304 ed. 03-24?",
+    "expected_answer": "No. Exclusion E-18 excludes sewer or drain backup damage unless the insured has purchased the optional Sewer Backup Coverage rider (Form SB-101).",
+    "expected_form": "HO-0304",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-18",
+    "category": "exclusion_attachment",
+    "answerable": true
+  },
+  {
+    "id": "Q3",
+    "question": "Does HO-0308 ed. 03-24 cover an air-conditioning compressor that fails due to normal wear and tear?",
+    "expected_answer": "No. Exclusion E-27 excludes loss or damage caused by wear and tear, gradual deterioration, rust, corrosion, erosion, settling, depletion, or exhaustion of a component's useful life.",
+    "expected_form": "HO-0308",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-27",
+    "category": "exclusion_attachment",
+    "answerable": true
+  },
+  {
+    "id": "Q4",
+    "question": "What is the effective date of the Earth Movement endorsement HO-0306 ed. 03-24?",
+    "expected_answer": "June 1, 2024",
+    "expected_form": "HO-0306",
+    "expected_clause": "Header — Effective Date",
+    "category": "effective_date",
+    "answerable": true
+  },
+  {
+    "id": "Q5",
+    "question": "Which endorsements in the index apply to the Dwelling Fire policy line?",
+    "expected_answer": "HO-0308 (Equipment Breakdown) and HO-0309 (Scheduled Personal Property)",
+    "expected_form": "HO-0308,HO-0309",
+    "expected_clause": "Header — Policy Line",
+    "category": "cross_endorsement",
+    "answerable": true
+  },
+  {
+    "id": "Q6",
+    "question": "Under HO-0309 ed. 03-24, is the mysterious disappearance of an unscheduled ring covered?",
+    "expected_answer": "No. Exclusion E-30 excludes mysterious disappearance of any personal property item that is NOT listed on the Personal Property Schedule.",
+    "expected_form": "HO-0309",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-30",
+    "category": "exclusion_attachment",
+    "answerable": true
+  },
+  {
+    "id": "Q7",
+    "question": "What coverage does HO-0305 ed. 03-24 provide?",
+    "expected_answer": "Coverage for the increased costs an insured may incur when repairing or rebuilding a damaged dwelling to comply with current building codes, ordinances, or laws enacted after original construction. It covers loss of undamaged portion, demolition costs, and increased construction costs.",
+    "expected_form": "HO-0305",
+    "expected_clause": "SECTION I — SCOPE AND PURPOSE",
+    "category": "scope",
+    "answerable": true
+  },
+  {
+    "id": "Q8",
+    "question": "How many days of continuous leakage triggers the gradual seepage exclusion E-15 under HO-0304 ed. 03-24?",
+    "expected_answer": "Fourteen (14) calendar days of continuous or repeated leakage triggers exclusion E-15.",
+    "expected_form": "HO-0304",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-15",
+    "category": "exclusion_attachment",
+    "answerable": true
+  }
+]

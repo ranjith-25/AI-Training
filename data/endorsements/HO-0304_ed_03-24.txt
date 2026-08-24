@@ -1,0 +1,136 @@
+================================================================================
+HOMEOWNERS POLICY ENDORSEMENT
+================================================================================
+Form Number:      HO-0304
+Edition:          03-24
+Effective Date:   March 1, 2024
+Policy Line:      Homeowners
+Insurer:          National Heritage Insurance Company
+State Filing:     Multi-State — All Jurisdictions
+================================================================================
+
+ENDORSEMENT TITLE:  Water Damage and Plumbing Systems Endorsement
+
+This endorsement modifies the insurance provided under the Homeowners Policy
+to which it is attached. It amends coverage for losses arising from water
+damage originating from interior plumbing, fixtures, and water supply systems
+within the insured dwelling and its attached structures.
+
+SECTION I — SCOPE AND PURPOSE
+
+This endorsement applies only to losses involving water that originates from
+the plumbing, heating, air-conditioning, or automatic fire-protective sprinkler
+systems within the dwelling premises. Coverage under this endorsement is
+subject to the deductible stated on the Declarations page and is excess of any
+applicable sub-limit shown in Schedule A of the base policy.
+
+Where a loss involves both a covered water-damage peril and an excluded peril,
+the Company shall pay only for the portion of the loss attributable to the
+covered peril, determined on a reasonable and equitable basis.
+
+SECTION II — DEFINITIONS
+
+For purposes of this endorsement, the following definitions apply in addition
+to those in the base policy:
+
+(a) "Plumbing System" means all pipes, fittings, valves, fixtures, and
+    appliances installed within the dwelling premises for the purpose of
+    distributing water or removing waterborne waste, including but not limited
+    to supply lines, drain lines, water heaters, dishwashers, and washing
+    machines.
+
+(b) "Sudden and Accidental Discharge" means a discharge or overflow of water
+    that occurs abruptly and is neither expected nor intended by the insured.
+    A burst pipe, a failed valve, or a ruptured supply hose constitutes a
+    sudden and accidental discharge.
+
+(c) "Gradual Seepage" means the slow, continuous, or repeated passage of water
+    through cracks, joints, or porous surfaces over a period exceeding
+    fourteen (14) calendar days, whether or not observable by the insured.
+
+SECTION III — COVERAGE MODIFICATIONS
+
+A. Coverage A — Dwelling. Water damage to the dwelling structure (walls,
+   floors, ceilings, insulation, and built-in cabinetry) is covered when
+   caused by a sudden and accidental discharge from the plumbing system,
+   subject to a per-occurrence sub-limit of $50,000 unless a higher limit
+   is shown on the Declarations page.
+
+B. Coverage C — Personal Property. Damage to personal property caused by a
+   sudden and accidental discharge is covered up to the Coverage C limit,
+   less the applicable deductible.
+
+C. Reasonable Costs of Tear-Out. The Company will pay reasonable costs
+   incurred to tear out and replace any part of the dwelling necessary to
+   repair the plumbing system from which the water escaped, provided the
+   discharge was sudden and accidental.
+
+SECTION IV — EXCLUSIONS TABLE
+
+The following exclusions apply to coverage provided under this endorsement.
+These exclusions are in addition to any exclusions in the base policy.
+
++------+-------------------------------------------+--------------------------------------+
+| Code | Exclusion Title                           | Description                          |
++------+-------------------------------------------+--------------------------------------+
+| E-15 | Gradual Seepage or Continuous Leakage     | Loss or damage caused by water that  |
+|      |                                           | seeps or leaks continuously or       |
+|      |                                           | repeatedly over a period of fourteen  |
+|      |                                           | (14) or more calendar days, whether   |
+|      |                                           | or not the seepage is visible to the  |
+|      |                                           | insured. This includes damage to      |
+|      |                                           | foundations, subflooring, and drywall |
+|      |                                           | attributable to prolonged moisture.   |
++------+-------------------------------------------+--------------------------------------+
+| E-16 | Unmaintained Plumbing Systems             | Loss or damage arising from a        |
+|      |                                           | plumbing system that has not been     |
+|      |                                           | inspected by a licensed plumber       |
+|      |                                           | within the twenty-four (24) months    |
+|      |                                           | preceding the date of loss, unless    |
+|      |                                           | the insured can demonstrate that the  |
+|      |                                           | failure was unrelated to maintenance. |
++------+-------------------------------------------+--------------------------------------+
+| E-17 | Flood, Surface Water, and Overflow        | Loss or damage caused by flood,      |
+|      |                                           | surface water, waves, tidal water,    |
+|      |                                           | tsunami, overflow of a body of water, |
+|      |                                           | or spray from any of these, whether   |
+|      |                                           | or not driven by wind. This exclusion |
+|      |                                           | applies regardless of any other cause |
+|      |                                           | or event that contributes concurrently|
+|      |                                           | or in any sequence to the loss. A     |
+|      |                                           | burst interior supply line is NOT     |
+|      |                                           | flood or surface water and is NOT     |
+|      |                                           | subject to this exclusion.            |
++------+-------------------------------------------+--------------------------------------+
+| E-18 | Sewer or Drain Backup                     | Loss or damage caused by water that  |
+|      |                                           | backs up through sewers, drains, or   |
+|      |                                           | sump pump systems, unless the insured |
+|      |                                           | has purchased the optional Sewer      |
+|      |                                           | Backup Coverage rider (Form SB-101). |
+|      |                                           | If the rider is attached, coverage is |
+|      |                                           | subject to the sub-limit stated       |
+|      |                                           | therein.                              |
++------+-------------------------------------------+--------------------------------------+
+
+SECTION V — CONDITIONS
+
+1. Duty to Mitigate. The insured shall take all reasonable steps to prevent
+   further water damage after discovering a discharge, including shutting off
+   the water supply and contacting a licensed plumber. Failure to mitigate may
+   reduce the amount payable under this endorsement.
+
+2. Documentation. The insured must provide photographic or video evidence of
+   the damage and retain all replaced components for inspection by the
+   Company's adjuster.
+
+3. Coordination with Flood Policy. If the insured also maintains a separate
+   flood insurance policy (e.g., NFIP or private flood), this endorsement
+   does not duplicate flood coverage. Any amount payable under the flood
+   policy for the same loss shall be deducted from the amount payable under
+   this endorsement.
+
+All other terms and conditions of the policy remain unchanged.
+
+================================================================================
+END OF ENDORSEMENT HO-0304 ed. 03-24
+================================================================================

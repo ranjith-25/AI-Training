@@ -1,0 +1,131 @@
+================================================================================
+HOMEOWNERS POLICY ENDORSEMENT
+================================================================================
+Form Number:      HO-0307
+Edition:          03-24
+Effective Date:   March 1, 2024
+Policy Line:      Homeowners
+Insurer:          National Heritage Insurance Company
+State Filing:     Multi-State — All Jurisdictions
+================================================================================
+
+ENDORSEMENT TITLE:  Home Business Property Endorsement
+
+This endorsement modifies the insurance provided under the Homeowners Policy
+to which it is attached. It extends Coverage C (Personal Property) to include
+business property used in a home-based business operated by the insured on
+the dwelling premises, subject to the terms, exclusions, and conditions
+stated below.
+
+SECTION I — SCOPE AND PURPOSE
+
+The standard Homeowners Policy limits coverage for business property on the
+dwelling premises to $2,500. This endorsement increases that limit to the
+Home Business Property Limit stated on the Declarations page (typically
+$10,000, $25,000, or $50,000) and broadens covered perils for qualifying
+business property.
+
+Qualifying business property includes furniture, equipment, supplies, and
+inventory used primarily in the insured's home-based business. It does not
+include motor vehicles, aircraft, watercraft, or property insured under a
+separate commercial policy.
+
+SECTION II — DEFINITIONS
+
+(a) "Home-Based Business" means a business operated by the named insured or
+    a resident relative primarily on the dwelling premises, with gross annual
+    revenue not exceeding $250,000. Businesses exceeding this threshold
+    require a separate commercial property policy.
+
+(b) "Business Property" means tangible property owned by the insured and
+    used primarily for business purposes, including computers, printers,
+    office furniture, tools, professional instruments, and inventory held
+    for sale.
+
+(c) "Electronic Data" means information, facts, or programs stored as or on,
+    created or used on, or transmitted to or from computer software, including
+    systems and applications software, hard or floppy disks, CD-ROMs, tapes,
+    drives, cells, data processing devices, or any other media which are used
+    with electronically controlled equipment.
+
+SECTION III — COVERAGE MODIFICATIONS
+
+A. Increased Business Property Limit. Coverage C is amended to provide
+   coverage for business property on the dwelling premises up to the Home
+   Business Property Limit, less the policy deductible.
+
+B. Business Property in Transit. Business property in transit between the
+   dwelling premises and a temporary business location (e.g., trade show,
+   client site) is covered up to $5,000 per occurrence.
+
+C. Accounts Receivable. The Company will pay up to $10,000 for loss of
+   accounts receivable records due to a covered peril, calculated as the
+   amount owed by customers less any amounts collected after the loss.
+
+D. Business Income Interruption. If a covered peril renders the business
+   property unusable, the Company will pay lost business income for up to
+   thirty (30) days, subject to a sub-limit of $5,000.
+
+SECTION IV — EXCLUSIONS TABLE
+
+The following exclusions apply to coverage provided under this endorsement.
+
++------+-------------------------------------------+--------------------------------------+
+| Code | Exclusion Title                           | Description                          |
++------+-------------------------------------------+--------------------------------------+
+| E-24 | Professional Liability and Errors &       | Loss, damage, or liability arising   |
+|      | Omissions                                 | from professional services rendered  |
+|      |                                           | or advice given by the insured in    |
+|      |                                           | the course of the home-based         |
+|      |                                           | business. This includes claims for   |
+|      |                                           | negligence, errors, or omissions in  |
+|      |                                           | professional work product. Such      |
+|      |                                           | risks require a separate Professional|
+|      |                                           | Liability policy.                    |
++------+-------------------------------------------+--------------------------------------+
+| E-25 | Business Property Stored Off-Premises     | Loss or damage to business property  |
+|      |                                           | stored at a location other than the  |
+|      |                                           | dwelling premises or while in transit |
+|      |                                           | exceeding the $5,000 in-transit      |
+|      |                                           | sub-limit. Property permanently      |
+|      |                                           | located at a co-working space,       |
+|      |                                           | warehouse, or other off-premises     |
+|      |                                           | location is not covered. Insureds    |
+|      |                                           | should obtain commercial inland      |
+|      |                                           | marine coverage for such property.   |
++------+-------------------------------------------+--------------------------------------+
+| E-26 | Electronic Data Loss                      | Loss of or damage to electronic data |
+|      |                                           | including corruption, unauthorized   |
+|      |                                           | access, cyber attack, ransomware, or |
+|      |                                           | programming error. This endorsement  |
+|      |                                           | covers only physical damage to the   |
+|      |                                           | media on which data is stored (e.g., |
+|      |                                           | a hard drive damaged by fire), not   |
+|      |                                           | the data itself. A separate Cyber    |
+|      |                                           | Liability policy is recommended.     |
++------+-------------------------------------------+--------------------------------------+
+
+SECTION V — CONDITIONS
+
+1. Business Use Disclosure. The insured must disclose the nature of the
+   home-based business to the Company at inception or renewal. Material
+   changes in business type, revenue, or property values must be reported
+   within thirty (30) days.
+
+2. Inventory Records. The insured must maintain current inventory records
+   for all business property. In the event of a claim, the burden of proof
+   for the existence and value of business property lies with the insured.
+
+3. Subrogation. The Company retains subrogation rights against third parties
+   responsible for loss to business property, including clients, vendors,
+   and delivery services.
+
+4. Other Insurance. If the insured has other insurance covering the same
+   business property, this endorsement shall be excess over such other
+   insurance.
+
+All other terms and conditions of the policy remain unchanged.
+
+================================================================================
+END OF ENDORSEMENT HO-0307 ed. 03-24
+================================================================================

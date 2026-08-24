@@ -1,0 +1,141 @@
+================================================================================
+HOMEOWNERS POLICY ENDORSEMENT
+================================================================================
+Form Number:      HO-0309
+Edition:          03-24
+Effective Date:   March 1, 2024
+Policy Line:      Dwelling Fire
+Insurer:          National Heritage Insurance Company
+State Filing:     Multi-State — All Jurisdictions
+================================================================================
+
+ENDORSEMENT TITLE:  Scheduled Personal Property Endorsement
+
+This endorsement modifies the insurance provided under the Dwelling Fire
+Policy to which it is attached. It provides broader coverage and agreed-value
+protection for specifically listed (scheduled) personal property items of
+high value, including jewelry, fine art, musical instruments, firearms,
+collectibles, and electronic equipment.
+
+SECTION I — SCOPE AND PURPOSE
+
+The standard policy limits coverage for certain categories of personal
+property (e.g., jewelry is limited to $1,500 for theft). This endorsement
+removes those sub-limits for items individually listed and appraised on the
+Personal Property Schedule attached to the Declarations page.
+
+Scheduled items are covered on an open-perils, agreed-value basis. The
+Company will pay the agreed value stated on the schedule for a total loss,
+or the cost of repair or replacement for a partial loss, without application
+of depreciation.
+
+Coverage applies worldwide — scheduled items are covered whether on the
+dwelling premises, in transit, or at any other location, subject to the
+exclusions below.
+
+SECTION II — DEFINITIONS
+
+(a) "Scheduled Item" means an article of personal property individually
+    listed by description and appraised value on the Personal Property
+    Schedule. Each item must be supported by a professional appraisal or
+    purchase receipt dated within three (3) years of the policy effective
+    date or most recent renewal.
+
+(b) "Agreed Value" means the dollar amount stated on the Personal Property
+    Schedule for each scheduled item, as agreed between the insured and the
+    Company at the time of scheduling. The agreed value is the maximum the
+    Company will pay for a total loss of that item.
+
+(c) "Mysterious Disappearance" means the vanishing of an item of personal
+    property from a known location under unexplained circumstances, without
+    evidence of a specific peril such as theft, fire, or windstorm.
+
+(d) "Pair or Set" means two or more items that have a combined value
+    exceeding the sum of their individual values due to their association
+    with each other (e.g., a matched pair of earrings, a complete set of
+    china, a series of prints).
+
+SECTION III — COVERAGE MODIFICATIONS
+
+A. Agreed-Value Coverage. For each scheduled item, the Company will pay up
+   to the agreed value for a total loss. No deductible applies to scheduled
+   items unless otherwise stated on the Declarations page.
+
+B. Partial Loss. For partial damage to a scheduled item, the Company will
+   pay the lesser of the cost to restore the item to its pre-loss condition
+   or the agreed value.
+
+C. Newly Acquired Items. Items acquired after the policy inception are
+   automatically covered for up to ninety (90) days at a maximum of $25,000
+   per item, provided the insured reports the item and provides an appraisal
+   within the ninety-day period.
+
+D. Worldwide Coverage. Scheduled items are covered at any location worldwide.
+   Coverage for items temporarily outside the United States or Canada is
+   limited to ninety (90) consecutive days per trip.
+
+SECTION IV — EXCLUSIONS TABLE
+
+The following exclusions apply to coverage provided under this endorsement.
+
++------+-------------------------------------------+--------------------------------------+
+| Code | Exclusion Title                           | Description                          |
++------+-------------------------------------------+--------------------------------------+
+| E-30 | Mysterious Disappearance of Unscheduled   | Loss caused by mysterious             |
+|      | Items                                     | disappearance of any personal        |
+|      |                                           | property item that is NOT listed on  |
+|      |                                           | the Personal Property Schedule. Only |
+|      |                                           | items individually scheduled and     |
+|      |                                           | appraised receive coverage for       |
+|      |                                           | mysterious disappearance. Unscheduled|
+|      |                                           | items must show evidence of a named  |
+|      |                                           | peril (theft, fire, etc.) to be      |
+|      |                                           | covered under the base policy.       |
++------+-------------------------------------------+--------------------------------------+
+| E-31 | Pairs and Sets — Partial Loss             | When part of a pair or set is lost   |
+|      |                                           | or damaged, the Company will pay the |
+|      |                                           | difference between the agreed value  |
+|      |                                           | of the complete pair or set and the  |
+|      |                                           | value of the remaining item(s), but  |
+|      |                                           | will NOT pay the agreed value of the |
+|      |                                           | entire pair or set. The insured may  |
+|      |                                           | tender the undamaged item(s) to the  |
+|      |                                           | Company and receive the full agreed  |
+|      |                                           | value of the pair or set.            |
++------+-------------------------------------------+--------------------------------------+
+| E-32 | Items in Undisclosed Storage Locations     | Loss of or damage to scheduled items |
+|      |                                           | stored at a location not disclosed   |
+|      |                                           | to the Company at the time of        |
+|      |                                           | scheduling or at renewal. The        |
+|      |                                           | insured must notify the Company      |
+|      |                                           | within thirty (30) days of moving    |
+|      |                                           | any scheduled item to a new storage  |
+|      |                                           | location. Failure to disclose        |
+|      |                                           | voids coverage for items at the      |
+|      |                                           | undisclosed location.                |
++------+-------------------------------------------+--------------------------------------+
+
+SECTION V — CONDITIONS
+
+1. Appraisal Updates. The insured must provide updated appraisals for all
+   scheduled items every three (3) years. If an item's current market value
+   differs materially from the agreed value, the schedule shall be amended
+   at renewal.
+
+2. Proof of Loss. For any claim under this endorsement, the insured must
+   provide the original appraisal or purchase receipt, photographs of the
+   item, and a signed sworn statement of loss.
+
+3. Pair or Set Election. When filing a claim for part of a pair or set, the
+   insured must elect within sixty (60) days whether to retain the remaining
+   item(s) or tender them to the Company.
+
+4. Recovery and Salvage. If a lost scheduled item is recovered after the
+   Company has paid the claim, the insured may either return the claim
+   payment and reclaim the item, or relinquish all rights to the item.
+
+All other terms and conditions of the policy remain unchanged.
+
+================================================================================
+END OF ENDORSEMENT HO-0309 ed. 03-24
+================================================================================

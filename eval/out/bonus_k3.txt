@@ -1,0 +1,72 @@
+
+##############################################################################
+  BONUS CHALLENGE — precision vs completeness
+  Question: Under HO-0308 ed. 03-24, is a window air-conditioning unit 'Covered Equipment' for the purposes of exclusion E-28, and would a claim for its failure be excluded?
+##############################################################################
+
+==============================================================================
+  STRATEGY: naive_fixed   (top_k=3, model=gemini-3.6-flash)
+==============================================================================
+  #1  HO-0308_naive_000        form=HO-0308  section=''                         score=0.8809
+  #2  HO-0308_naive_003        form=HO-0308  section=''                         score=0.8774
+  #3  HO-0308_naive_001        form=HO-0308  section=''                         score=0.8726
+
+  Context coverage:
+    PRESENT  exclusion_row_E-28
+    PRESENT  definition_covered_equipment
+  Exclusion row ranked #1: False
+
+  ANSWER:
+Under Form HO-0308, a window air-conditioning unit is classified as a portable or plug-in appliance and is **not** "Covered Equipment" unless it is specifically scheduled [Source: HO-0308_naive_001 | HO-0308, SECTION II (a)]. 
+
+Consequently, a claim for its failure would be excluded under Exclusion E-28, which excludes loss or damage to equipment that does not meet the definition of Covered Equipment or is not listed on the Equipment Schedule [Source: HO-0308_naive_003 | HO-0308, E-28].
+
+  Refused: False
+
+==============================================================================
+  STRATEGY: structure_aware   (top_k=3, model=gemini-3.6-flash)
+==============================================================================
+  #1  HO-0308_struct_003       form=HO-0308  section='EXCLUSIONS TABLE'         score=0.8879
+  #2  HO-0308_struct_001       form=HO-0308  section='DEFINITIONS'              score=0.8805
+  #3  HO-0308_struct_000       form=HO-0308  section='SCOPE AND PURPOSE'        score=0.8778
+
+  Context coverage:
+    PRESENT  exclusion_row_E-28
+    PRESENT  definition_covered_equipment
+  Exclusion row ranked #1: True
+
+  ANSWER:
+Under HO-0308, a window air-conditioning unit is classified as a portable or plug-in appliance and is **not** considered "Covered Equipment" unless it is specifically listed on an attached Equipment Schedule [Source: HO-0308_struct_001 | HO-0308, Section II (a)]. 
+
+Consequently, unless specifically scheduled, a claim for its failure would be excluded under Exclusion E-28 ("Equipment Not on the Schedule"), which excludes loss or damage to portable appliances and equipment that does not meet the definition of Covered Equipment or is not listed on the Equipment Schedule [Source: HO-0308_struct_003 | HO-0308, Section IV E-28].
+
+  Refused: False
+
+==============================================================================
+  STRATEGY: structure_aware_rows   (top_k=3, model=gemini-3.6-flash)
+==============================================================================
+  #1  HO-0308_rows_004         form=HO-0308  section='EXCLUSIONS TABLE'         score=0.9003
+  #2  HO-0308_rows_003         form=HO-0308  section='EXCLUSIONS TABLE'         score=0.8813
+  #3  HO-0308_rows_001         form=HO-0308  section='DEFINITIONS'              score=0.8805
+
+  Context coverage:
+    PRESENT  exclusion_row_E-28
+    PRESENT  definition_covered_equipment
+  Exclusion row ranked #1: True
+
+  ANSWER:
+Under HO-0308, a window air-conditioning unit is classified as a portable or plug-in appliance and is not "Covered Equipment" unless it is specifically listed on an attached Equipment Schedule [Source: HO-0308_rows_001 | HO-0308, §II(a)]. 
+
+If the window air-conditioning unit is not specifically scheduled, a claim for its failure would be excluded under Exclusion E-28, which excludes loss or damage to equipment that does not meet the definition of Covered Equipment, explicitly including portable appliances [Source: HO-0308_rows_004 | HO-0308, §IV E-28] [Source: HO-0308_rows_001 | HO-0308, §II(a)].
+
+  Refused: False
+
+##############################################################################
+  SIDE BY SIDE
+##############################################################################
+  naive_fixed        row#1=False  refused=False  context has: exclusion_row_E-28, definition_covered_equipment
+  structure_aware    row#1=True   refused=False  context has: exclusion_row_E-28, definition_covered_equipment
+  structure_aware_rows row#1=True   refused=False  context has: exclusion_row_E-28, definition_covered_equipment
+
+  Written to D:\AI-Training\eval\bonus_results.json
+

@@ -1,0 +1,60 @@
+
+##############################################################################
+  BONUS CHALLENGE — precision vs completeness
+  Question: Under HO-0308 ed. 03-24, an air-conditioning compressor failed. Is that failure a 'breakdown' as the endorsement defines it, and does exclusion E-27 bar the claim if the failure came from normal wear and tear?
+##############################################################################
+
+==============================================================================
+  STRATEGY: naive_fixed   (top_k=1, model=gemini-3.6-flash)
+==============================================================================
+  #1  HO-0308_naive_000        form=HO-0308  section=''                         score=0.8790
+
+  Context coverage:
+    MISSING  exclusion_row_E-27
+    MISSING  definition_of_breakdown
+  Exclusion row ranked #1: False
+
+  ANSWER:
+I cannot answer this question from the available endorsement documents.
+
+  Refused: True
+
+==============================================================================
+  STRATEGY: structure_aware   (top_k=1, model=gemini-3.6-flash)
+==============================================================================
+  #1  HO-0308_struct_003       form=HO-0308  section='EXCLUSIONS TABLE'         score=0.8897
+
+  Context coverage:
+    PRESENT  exclusion_row_E-27
+    MISSING  definition_of_breakdown
+  Exclusion row ranked #1: True
+
+  ANSWER:
+I cannot answer this question from the available endorsement documents.
+
+  Refused: True
+
+==============================================================================
+  STRATEGY: structure_aware_rows   (top_k=1, model=gemini-3.6-flash)
+==============================================================================
+  #1  HO-0308_rows_003         form=HO-0308  section='EXCLUSIONS TABLE'         score=0.9018
+
+  Context coverage:
+    PRESENT  exclusion_row_E-27
+    MISSING  definition_of_breakdown
+  Exclusion row ranked #1: True
+
+  ANSWER:
+I cannot answer this question from the available endorsement documents.
+
+  Refused: True
+
+##############################################################################
+  SIDE BY SIDE
+##############################################################################
+  naive_fixed        row#1=False  refused=True   context has: nothing
+  structure_aware    row#1=True   refused=True   context has: exclusion_row_E-27
+  structure_aware_rows row#1=True   refused=True   context has: exclusion_row_E-27
+
+  Written to D:\AI-Training\eval\bonus_results.json
+

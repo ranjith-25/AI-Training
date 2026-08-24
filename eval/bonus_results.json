@@ -1,0 +1,89 @@
+{
+  "question": "Under HO-0308 ed. 03-24, is a window air-conditioning unit 'Covered Equipment' for the purposes of exclusion E-28, and would a claim for its failure be excluded?",
+  "top_k": 2,
+  "generation_model": "gemini-3.6-flash",
+  "retrieval": "MongoDB Atlas $vectorSearch (exact ENN, cosine)",
+  "runs": [
+    {
+      "strategy": "naive_fixed",
+      "top_k": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "HO-0308_naive_000",
+          "form_number": "HO-0308",
+          "section": "",
+          "score": 0.8809
+        },
+        {
+          "rank": 2,
+          "chunk_id": "HO-0308_naive_003",
+          "form_number": "HO-0308",
+          "section": "",
+          "score": 0.8774
+        }
+      ],
+      "context_coverage": {
+        "exclusion_row_E-28": true,
+        "definition_covered_equipment": false
+      },
+      "exclusion_row_ranked_first": false,
+      "answer": "I cannot answer this question from the available endorsement documents.",
+      "refused": true
+    },
+    {
+      "strategy": "structure_aware",
+      "top_k": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "HO-0308_struct_003",
+          "form_number": "HO-0308",
+          "section": "EXCLUSIONS TABLE",
+          "score": 0.8879
+        },
+        {
+          "rank": 2,
+          "chunk_id": "HO-0308_struct_001",
+          "form_number": "HO-0308",
+          "section": "DEFINITIONS",
+          "score": 0.8805
+        }
+      ],
+      "context_coverage": {
+        "exclusion_row_E-28": true,
+        "definition_covered_equipment": true
+      },
+      "exclusion_row_ranked_first": true,
+      "answer": "Under HO-0308 (ed. 03-24):\n\n* **Covered Equipment Status:** A window air-conditioning unit is considered a portable or plug-in appliance and is **not** \"Covered Equipment\" unless it is specifically listed on the attached Equipment Schedule [Source: HO-0308_struct_001 | HO-0308, §II (a)].\n* **Exclusion Status:** If it is not specifically scheduled, a claim for its failure **would be excluded** under Exclusion E-28, which applies to portable appliances and equipment that does not meet the definition of Covered Equipment or is omitted from the Equipment Schedule [Source: HO-0308_struct_003 | HO-0308, §IV E-28].",
+      "refused": false
+    },
+    {
+      "strategy": "structure_aware_rows",
+      "top_k": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "HO-0308_rows_004",
+          "form_number": "HO-0308",
+          "section": "EXCLUSIONS TABLE",
+          "score": 0.9003
+        },
+        {
+          "rank": 2,
+          "chunk_id": "HO-0308_rows_003",
+          "form_number": "HO-0308",
+          "section": "EXCLUSIONS TABLE",
+          "score": 0.8813
+        }
+      ],
+      "context_coverage": {
+        "exclusion_row_E-28": true,
+        "definition_covered_equipment": false
+      },
+      "exclusion_row_ranked_first": true,
+      "answer": "I cannot answer this question from the available endorsement documents.",
+      "refused": true
+    }
+  ]
+}

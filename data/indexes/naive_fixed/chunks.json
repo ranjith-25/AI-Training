@@ -1,0 +1,496 @@
+[
+  {
+    "chunk_id": "HO-0304_naive_000",
+    "text": "================================================================================\nHOMEOWNERS POLICY ENDORSEMENT\n================================================================================\nForm Number:      HO-0304\nEdition:          03-24\nEffective Date:   March 1, 2024\nPolicy Line:      Homeowners\nInsurer:          National Heritage Insurance Company\nState Filing:     Multi-State \u2014 All Jurisdictions\n================================================================================\n\nENDORSEMENT TITLE:  Water Damage and Plumbing Systems Endorsement\n\nThis endorsement modifies the insurance provided under the Homeowners Policy\nto which it is attached. It amends coverage for losses arising from water\ndamage originating from interior plumbing, fixtures, and water supply systems\nwithin the insured dwelling and its attached structures.\n\nSECTION I \u2014 SCOPE AND PURPOSE\n\nThis endorsement applies only to losses involving water that originates from\nthe plumbing, heating, air-conditioning, or automatic fire-protective sprinkler\nsystems within the dwelling premises. Coverage under this endorsement is\nsubject to the deductible stated on the Declarations page and is excess of any\napplicable sub-limit shown in Schedule A of the base policy.\n\nWhere a loss involves both a covered water-damage peril and an excluded peril,\nthe Company shall pay only for the portion of the loss attributable to the\ncovered peril, determined on a reasonable and equitable basis.\n\nSECTION II \u2014 DEFINITIONS\n\nFor purpose",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "0"
+    }
+  },
+  {
+    "chunk_id": "HO-0304_naive_001",
+    "text": " and an excluded peril,\nthe Company shall pay only for the portion of the loss attributable to the\ncovered peril, determined on a reasonable and equitable basis.\n\nSECTION II \u2014 DEFINITIONS\n\nFor purposes of this endorsement, the following definitions apply in addition\nto those in the base policy:\n\n(a) \"Plumbing System\" means all pipes, fittings, valves, fixtures, and\n    appliances installed within the dwelling premises for the purpose of\n    distributing water or removing waterborne waste, including but not limited\n    to supply lines, drain lines, water heaters, dishwashers, and washing\n    machines.\n\n(b) \"Sudden and Accidental Discharge\" means a discharge or overflow of water\n    that occurs abruptly and is neither expected nor intended by the insured.\n    A burst pipe, a failed valve, or a ruptured supply hose constitutes a\n    sudden and accidental discharge.\n\n(c) \"Gradual Seepage\" means the slow, continuous, or repeated passage of water\n    through cracks, joints, or porous surfaces over a period exceeding\n    fourteen (14) calendar days, whether or not observable by the insured.\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Coverage A \u2014 Dwelling. Water damage to the dwelling structure (walls,\n   floors, ceilings, insulation, and built-in cabinetry) is covered when\n   caused by a sudden and accidental discharge from the plumbing system,\n   subject to a per-occurrence sub-limit of $50,000 unless a higher limit\n   is shown on the Declarations page.\n\nB. Coverage C \u2014 Personal Pro",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "1"
+    }
+  },
+  {
+    "chunk_id": "HO-0304_naive_002",
+    "text": " sudden and accidental discharge from the plumbing system,\n   subject to a per-occurrence sub-limit of $50,000 unless a higher limit\n   is shown on the Declarations page.\n\nB. Coverage C \u2014 Personal Property. Damage to personal property caused by a\n   sudden and accidental discharge is covered up to the Coverage C limit,\n   less the applicable deductible.\n\nC. Reasonable Costs of Tear-Out. The Company will pay reasonable costs\n   incurred to tear out and replace any part of the dwelling necessary to\n   repair the plumbing system from which the water escaped, provided the\n   discharge was sudden and accidental.\n\nSECTION IV \u2014 EXCLUSIONS TABLE\n\nThe following exclusions apply to coverage provided under this endorsement.\nThese exclusions are in addition to any exclusions in the base policy.\n\n+------+-------------------------------------------+--------------------------------------+\n| Code | Exclusion Title                           | Description                          |\n+------+-------------------------------------------+--------------------------------------+\n| E-15 | Gradual Seepage or Continuous Leakage     | Loss or damage caused by water that  |\n|      |                                           | seeps or leaks continuously or       |\n|      |                                           | repeatedly over a period of fourteen  |\n|      |                                           | (14) or more calendar days, whether   |\n|      |                                           | or not",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "2"
+    }
+  },
+  {
+    "chunk_id": "HO-0304_naive_003",
+    "text": "      | repeatedly over a period of fourteen  |\n|      |                                           | (14) or more calendar days, whether   |\n|      |                                           | or not the seepage is visible to the  |\n|      |                                           | insured. This includes damage to      |\n|      |                                           | foundations, subflooring, and drywall |\n|      |                                           | attributable to prolonged moisture.   |\n+------+-------------------------------------------+--------------------------------------+\n| E-16 | Unmaintained Plumbing Systems             | Loss or damage arising from a        |\n|      |                                           | plumbing system that has not been     |\n|      |                                           | inspected by a licensed plumber       |\n|      |                                           | within the twenty-four (24) months    |\n|      |                                           | preceding the date of loss, unless    |\n|      |                                           | the insured can demonstrate that the  |\n|      |                                           | failure was unrelated to maintenance. |\n+------+-------------------------------------------+--------------------------------------+\n| E-17 | Flood, Surface Water, and Overflow        | Loss or damage caused by flood,      |\n|      |                                           | surface ",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "3"
+    }
+  },
+  {
+    "chunk_id": "HO-0304_naive_004",
+    "text": "------+--------------------------------------+\n| E-17 | Flood, Surface Water, and Overflow        | Loss or damage caused by flood,      |\n|      |                                           | surface water, waves, tidal water,    |\n|      |                                           | tsunami, overflow of a body of water, |\n|      |                                           | or spray from any of these, whether   |\n|      |                                           | or not driven by wind. This exclusion |\n|      |                                           | applies regardless of any other cause |\n|      |                                           | or event that contributes concurrently|\n|      |                                           | or in any sequence to the loss. A     |\n|      |                                           | burst interior supply line is NOT     |\n|      |                                           | flood or surface water and is NOT     |\n|      |                                           | subject to this exclusion.            |\n+------+-------------------------------------------+--------------------------------------+\n| E-18 | Sewer or Drain Backup                     | Loss or damage caused by water that  |\n|      |                                           | backs up through sewers, drains, or   |\n|      |                                           | sump pump systems, unless the insured |\n|      |                                           | has purc",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "4"
+    }
+  },
+  {
+    "chunk_id": "HO-0304_naive_005",
+    "text": "    | backs up through sewers, drains, or   |\n|      |                                           | sump pump systems, unless the insured |\n|      |                                           | has purchased the optional Sewer      |\n|      |                                           | Backup Coverage rider (Form SB-101). |\n|      |                                           | If the rider is attached, coverage is |\n|      |                                           | subject to the sub-limit stated       |\n|      |                                           | therein.                              |\n+------+-------------------------------------------+--------------------------------------+\n\nSECTION V \u2014 CONDITIONS\n\n1. Duty to Mitigate. The insured shall take all reasonable steps to prevent\n   further water damage after discovering a discharge, including shutting off\n   the water supply and contacting a licensed plumber. Failure to mitigate may\n   reduce the amount payable under this endorsement.\n\n2. Documentation. The insured must provide photographic or video evidence of\n   the damage and retain all replaced components for inspection by the\n   Company's adjuster.\n\n3. Coordination with Flood Policy. If the insured also maintains a separate\n   flood insurance policy (e.g., NFIP or private flood), this endorsement\n   does not duplicate flood coverage. Any amount payable under the flood\n   policy for the same loss shall be deducted from the amount payable under\n   this endorsement.\n\n",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "5"
+    }
+  },
+  {
+    "chunk_id": "HO-0304_naive_006",
+    "text": "ate flood), this endorsement\n   does not duplicate flood coverage. Any amount payable under the flood\n   policy for the same loss shall be deducted from the amount payable under\n   this endorsement.\n\nAll other terms and conditions of the policy remain unchanged.\n\n================================================================================\nEND OF ENDORSEMENT HO-0304 ed. 03-24\n================================================================================\n",
+    "metadata": {
+      "source_file": "HO-0304_ed_03-24.txt",
+      "form_number": "HO-0304",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "6"
+    }
+  },
+  {
+    "chunk_id": "HO-0305_naive_000",
+    "text": "================================================================================\nHOMEOWNERS POLICY ENDORSEMENT\n================================================================================\nForm Number:      HO-0305\nEdition:          03-24\nEffective Date:   March 1, 2024\nPolicy Line:      Homeowners\nInsurer:          National Heritage Insurance Company\nState Filing:     Multi-State \u2014 All Jurisdictions\n================================================================================\n\nENDORSEMENT TITLE:  Ordinance or Law Coverage Endorsement\n\nThis endorsement modifies the insurance provided under the Homeowners Policy\nto which it is attached. It provides coverage for the increased costs an\ninsured may incur when repairing or rebuilding a damaged dwelling to comply\nwith current building codes, ordinances, or laws that were enacted after the\noriginal construction of the dwelling.\n\nSECTION I \u2014 SCOPE AND PURPOSE\n\nFollowing a covered loss to the dwelling, the enforcement of building codes or\nordinances may require the insured to incur costs beyond the direct physical\ndamage. This endorsement provides three categories of additional coverage:\n\n  (a) Coverage for the loss in value of the undamaged portion of the dwelling\n      when a building ordinance requires demolition of the entire structure;\n  (b) Coverage for the cost of demolishing and clearing the undamaged portion;\n  (c) Coverage for the increased cost of construction to meet current codes.\n\nThe combined limit of liability fo",
+    "metadata": {
+      "source_file": "HO-0305_ed_03-24.txt",
+      "form_number": "HO-0305",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "0"
+    }
+  },
+  {
+    "chunk_id": "HO-0305_naive_001",
+    "text": "ructure;\n  (b) Coverage for the cost of demolishing and clearing the undamaged portion;\n  (c) Coverage for the increased cost of construction to meet current codes.\n\nThe combined limit of liability for all three categories shall not exceed the\nOrdinance or Law Coverage Limit stated on the Declarations page, or 10% of\nthe Coverage A limit, whichever is greater.\n\nSECTION II \u2014 DEFINITIONS\n\n(a) \"Building Code\" means any ordinance, law, or regulation governing the\n    construction, repair, renovation, or demolition of a building, including\n    zoning laws, environmental regulations, and accessibility standards such\n    as the Americans with Disabilities Act (ADA).\n\n(b) \"Functionally Equivalent\" means construction that serves the same purpose\n    and provides the same utility as the original, using currently available\n    materials and methods, even if such materials differ from those originally\n    used.\n\n(c) \"Increased Cost of Construction\" means the additional expense, beyond\n    the cost of repairing or replacing the damaged portion, required to bring\n    the repaired or rebuilt dwelling into compliance with current building\n    codes.\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Loss of Undamaged Portion. If a building code requires the demolition of\n   the undamaged portion of the dwelling, the Company will pay for the loss\n   in value of that undamaged portion, calculated as the replacement cost of\n   the undamaged portion less its salvage value.\n\nB. Demolition and Clearing Cos",
+    "metadata": {
+      "source_file": "HO-0305_ed_03-24.txt",
+      "form_number": "HO-0305",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "1"
+    }
+  },
+  {
+    "chunk_id": "HO-0305_naive_002",
+    "text": "welling, the Company will pay for the loss\n   in value of that undamaged portion, calculated as the replacement cost of\n   the undamaged portion less its salvage value.\n\nB. Demolition and Clearing Costs. The Company will pay the reasonable costs\n   of demolishing and clearing the site of the undamaged portion, including\n   debris removal and disposal fees required by environmental regulations.\n\nC. Increased Construction Costs. The Company will pay the additional cost to\n   repair, rebuild, or construct the dwelling using methods and materials\n   required by the current building code, above the cost of restoring the\n   dwelling to its pre-loss condition. This includes upgrades to electrical,\n   plumbing, insulation, and structural systems mandated by code.\n\nSECTION IV \u2014 EXCLUSIONS TABLE\n\nThe following exclusions apply to coverage provided under this endorsement.\n\n+------+-------------------------------------------+--------------------------------------+\n| Code | Exclusion Title                           | Description                          |\n+------+-------------------------------------------+--------------------------------------+\n| E-19 | Cosmetic-Only Ordinance Upgrades          | Costs incurred solely to meet        |\n|      |                                           | aesthetic or cosmetic requirements    |\n|      |                                           | imposed by a homeowners association,  |\n|      |                                           | architectural revi",
+    "metadata": {
+      "source_file": "HO-0305_ed_03-24.txt",
+      "form_number": "HO-0305",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "2"
+    }
+  },
+  {
+    "chunk_id": "HO-0305_naive_003",
+    "text": "hetic or cosmetic requirements    |\n|      |                                           | imposed by a homeowners association,  |\n|      |                                           | architectural review board, or        |\n|      |                                           | historic preservation commission,     |\n|      |                                           | unless such requirements are mandated |\n|      |                                           | by a governmental building code. This |\n|      |                                           | exclusion applies to requirements     |\n|      |                                           | such as matching exterior paint       |\n|      |                                           | colors, specific roofing materials    |\n|      |                                           | for appearance, or decorative fencing.|\n+------+-------------------------------------------+--------------------------------------+\n| E-20 | Demolition of Undamaged Portions Not      | Costs of demolishing or clearing     |\n|      | Required by Governmental Authority        | portions of the dwelling that are not |\n|      |                                           | required to be demolished by a        |\n|      |                                           | governmental authority under an       |\n|      |                                           | applicable building code. Voluntary   |\n|      |                                           | demolition, owner-",
+    "metadata": {
+      "source_file": "HO-0305_ed_03-24.txt",
+      "form_number": "HO-0305",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "3"
+    }
+  },
+  {
+    "chunk_id": "HO-0305_naive_004",
+    "text": "rnmental authority under an       |\n|      |                                           | applicable building code. Voluntary   |\n|      |                                           | demolition, owner-elected upgrades,   |\n|      |                                           | or demolition requested by a private  |\n|      |                                           | party (e.g., contractor recommenda-   |\n|      |                                           | tion) are not covered under this      |\n|      |                                           | endorsement.                          |\n+------+-------------------------------------------+--------------------------------------+\n\nSECTION V \u2014 CONDITIONS\n\n1. Duty to Comply. The insured must make a good-faith effort to comply with\n   all applicable building codes when repairing or rebuilding. If the insured\n   elects not to rebuild, the Company shall pay the lesser of the increased\n   cost of construction or the actual cash value of the loss.\n\n2. Time Limit for Construction. Increased construction costs are covered only\n   if construction begins within two (2) years of the date of the covered loss\n   and is completed within a reasonable time thereafter.\n\n3. Prior Violations. This endorsement does not cover costs to correct\n   pre-existing code violations that existed before the date of the covered\n   loss.\n\n4. Multiple Codes. Where multiple building codes apply, the Company will pay\n   the cost to meet the most restrictive applica",
+    "metadata": {
+      "source_file": "HO-0305_ed_03-24.txt",
+      "form_number": "HO-0305",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "4"
+    }
+  },
+  {
+    "chunk_id": "HO-0305_naive_005",
+    "text": "ting code violations that existed before the date of the covered\n   loss.\n\n4. Multiple Codes. Where multiple building codes apply, the Company will pay\n   the cost to meet the most restrictive applicable code, but not to exceed\n   the Ordinance or Law Coverage Limit.\n\nAll other terms and conditions of the policy remain unchanged.\n\n================================================================================\nEND OF ENDORSEMENT HO-0305 ed. 03-24\n================================================================================\n",
+    "metadata": {
+      "source_file": "HO-0305_ed_03-24.txt",
+      "form_number": "HO-0305",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "5"
+    }
+  },
+  {
+    "chunk_id": "HO-0306_naive_000",
+    "text": "================================================================================\nHOMEOWNERS POLICY ENDORSEMENT\n================================================================================\nForm Number:      HO-0306\nEdition:          03-24\nEffective Date:   June 1, 2024\nPolicy Line:      Homeowners\nInsurer:          National Heritage Insurance Company\nState Filing:     Multi-State \u2014 All Jurisdictions\n================================================================================\n\nENDORSEMENT TITLE:  Earth Movement Endorsement\n\nThis endorsement modifies the insurance provided under the Homeowners Policy\nto which it is attached. It provides limited coverage for direct physical\nloss to the dwelling and personal property caused by earth movement,\nsubject to the terms, exclusions, and conditions stated below.\n\nSECTION I \u2014 SCOPE AND PURPOSE\n\nEarth movement includes, but is not limited to, earthquake, landslide,\nmudflow, mudslide, sinkhole collapse, subsidence, and any other earth\nmovement (including earth movement resulting from volcanic activity).\nCoverage under this endorsement is subject to a separate Earth Movement\nDeductible stated on the Declarations page, expressed as a percentage\nof the Coverage A limit (typically 5%, 10%, or 15%).\n\nThis endorsement does not replace or duplicate earthquake coverage provided\nunder a standalone earthquake policy. If the insured maintains a separate\nearthquake policy, coverage under this endorsement is excess of amounts\npayable under that p",
+    "metadata": {
+      "source_file": "HO-0306_ed_03-24.txt",
+      "form_number": "HO-0306",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "June 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "0"
+    }
+  },
+  {
+    "chunk_id": "HO-0306_naive_001",
+    "text": "cate earthquake coverage provided\nunder a standalone earthquake policy. If the insured maintains a separate\nearthquake policy, coverage under this endorsement is excess of amounts\npayable under that policy.\n\nSECTION II \u2014 DEFINITIONS\n\n(a) \"Earth Movement\" means any natural or human-caused shifting, settling,\n    cracking, sinking, rising, or lateral displacement of earth, soil, or\n    rock, whether sudden or gradual.\n\n(b) \"Sinkhole Collapse\" means the sudden settlement or collapse of earth\n    into a subsurface void created by the dissolution of underlying limestone\n    or other soluble rock (karst geology).\n\n(c) \"Zone A Karst Terrain\" means geographic areas identified by the state\n    geological survey as having a high probability of sinkhole activity due\n    to the presence of carbonate bedrock at shallow depth. The insured\n    Declarations page identifies whether the dwelling premises are located\n    in Zone A.\n\n(d) \"Mine Subsidence\" means lateral or vertical ground movement caused by\n    the collapse of man-made underground mines, including coal mines,\n    limestone quarries, and salt mines.\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Coverage A \u2014 Dwelling. Direct physical loss to the dwelling caused by\n   earth movement is covered up to the Coverage A limit, less the Earth\n   Movement Deductible. The Company will pay the cost to repair or replace\n   the damaged dwelling at replacement cost, provided the insured rebuilds\n   on the same premises.\n\nB. Coverage B \u2014 Other Struct",
+    "metadata": {
+      "source_file": "HO-0306_ed_03-24.txt",
+      "form_number": "HO-0306",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "June 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "1"
+    }
+  },
+  {
+    "chunk_id": "HO-0306_naive_002",
+    "text": "ovement Deductible. The Company will pay the cost to repair or replace\n   the damaged dwelling at replacement cost, provided the insured rebuilds\n   on the same premises.\n\nB. Coverage B \u2014 Other Structures. Loss to other structures (detached garages,\n   fences, retaining walls) caused by earth movement is covered up to the\n   Coverage B limit, less the Earth Movement Deductible.\n\nC. Coverage C \u2014 Personal Property. Loss to personal property caused by earth\n   movement is covered at actual cash value, unless the insured has\n   purchased the Replacement Cost on Personal Property endorsement.\n\nD. Additional Living Expense. If earth movement renders the dwelling\n   uninhabitable, the Company will pay additional living expenses under\n   Coverage D for up to twelve (12) months.\n\nSECTION IV \u2014 EXCLUSIONS TABLE\n\nThe following exclusions apply to coverage provided under this endorsement.\n\n+------+-------------------------------------------+--------------------------------------+\n| Code | Exclusion Title                           | Description                          |\n+------+-------------------------------------------+--------------------------------------+\n| E-21 | Sinkhole Losses in Zone A Karst Terrain   | Loss or damage caused by sinkhole    |\n|      |                                           | collapse at dwelling premises         |\n|      |                                           | located in Zone A Karst Terrain, as   |\n|      |                                           | ide",
+    "metadata": {
+      "source_file": "HO-0306_ed_03-24.txt",
+      "form_number": "HO-0306",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "June 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "2"
+    }
+  },
+  {
+    "chunk_id": "HO-0306_naive_003",
+    "text": "         | collapse at dwelling premises         |\n|      |                                           | located in Zone A Karst Terrain, as   |\n|      |                                           | identified on the Declarations page.  |\n|      |                                           | Coverage for Zone A properties may    |\n|      |                                           | be available through the state        |\n|      |                                           | sinkhole insurance program. This      |\n|      |                                           | exclusion does not apply to earth     |\n|      |                                           | movement other than sinkhole          |\n|      |                                           | collapse.                             |\n+------+-------------------------------------------+--------------------------------------+\n| E-22 | Volcanic Eruption                         | Loss or damage caused directly by    |\n|      |                                           | volcanic eruption, including lava     |\n|      |                                           | flow, volcanic blast, airborne        |\n|      |                                           | volcanic debris, ash, dust, or        |\n|      |                                           | particulate matter, and volcanic      |\n|      |                                           | gases. This exclusion applies even    |\n|      |                                           | if ",
+    "metadata": {
+      "source_file": "HO-0306_ed_03-24.txt",
+      "form_number": "HO-0306",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "June 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "3"
+    }
+  },
+  {
+    "chunk_id": "HO-0306_naive_004",
+    "text": "         | particulate matter, and volcanic      |\n|      |                                           | gases. This exclusion applies even    |\n|      |                                           | if the volcanic activity triggers     |\n|      |                                           | secondary earth movement such as      |\n|      |                                           | landslide or mudflow.                 |\n+------+-------------------------------------------+--------------------------------------+\n| E-23 | Mine Subsidence                           | Loss or damage caused by mine        |\n|      |                                           | subsidence, unless the insured has    |\n|      |                                           | purchased coverage through the state  |\n|      |                                           | mine subsidence insurance fund. If    |\n|      |                                           | state fund coverage applies, this     |\n|      |                                           | endorsement is excess of the state    |\n|      |                                           | fund limits.                          |\n+------+-------------------------------------------+--------------------------------------+\n\nSECTION V \u2014 CONDITIONS\n\n1. Inspection Requirement. After any earth movement event, the insured must\n   arrange for a structural inspection by a licensed engineer within sixty\n   (60) days. The Company may deny the claim if the insured fails t",
+    "metadata": {
+      "source_file": "HO-0306_ed_03-24.txt",
+      "form_number": "HO-0306",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "June 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "4"
+    }
+  },
+  {
+    "chunk_id": "HO-0306_naive_005",
+    "text": "irement. After any earth movement event, the insured must\n   arrange for a structural inspection by a licensed engineer within sixty\n   (60) days. The Company may deny the claim if the insured fails to obtain\n   the inspection.\n\n2. Multiple Events. If multiple earth movement events occur within a\n   seventy-two (72) hour period, they shall be treated as a single\n   occurrence for purposes of the deductible.\n\n3. Land Stabilization. The Company will pay reasonable costs of land\n   stabilization (e.g., grouting, underpinning) to prevent further damage\n   to the dwelling, up to $25,000 per occurrence.\n\n4. Government-Ordered Evacuation. If a governmental authority orders\n   evacuation of the dwelling due to imminent earth movement, the Company\n   will pay additional living expenses under Coverage D beginning on the\n   date of the evacuation order.\n\nAll other terms and conditions of the policy remain unchanged.\n\n================================================================================\nEND OF ENDORSEMENT HO-0306 ed. 03-24\n================================================================================\n",
+    "metadata": {
+      "source_file": "HO-0306_ed_03-24.txt",
+      "form_number": "HO-0306",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "June 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "5"
+    }
+  },
+  {
+    "chunk_id": "HO-0307_naive_000",
+    "text": "================================================================================\nHOMEOWNERS POLICY ENDORSEMENT\n================================================================================\nForm Number:      HO-0307\nEdition:          03-24\nEffective Date:   March 1, 2024\nPolicy Line:      Homeowners\nInsurer:          National Heritage Insurance Company\nState Filing:     Multi-State \u2014 All Jurisdictions\n================================================================================\n\nENDORSEMENT TITLE:  Home Business Property Endorsement\n\nThis endorsement modifies the insurance provided under the Homeowners Policy\nto which it is attached. It extends Coverage C (Personal Property) to include\nbusiness property used in a home-based business operated by the insured on\nthe dwelling premises, subject to the terms, exclusions, and conditions\nstated below.\n\nSECTION I \u2014 SCOPE AND PURPOSE\n\nThe standard Homeowners Policy limits coverage for business property on the\ndwelling premises to $2,500. This endorsement increases that limit to the\nHome Business Property Limit stated on the Declarations page (typically\n$10,000, $25,000, or $50,000) and broadens covered perils for qualifying\nbusiness property.\n\nQualifying business property includes furniture, equipment, supplies, and\ninventory used primarily in the insured's home-based business. It does not\ninclude motor vehicles, aircraft, watercraft, or property insured under a\nseparate commercial policy.\n\nSECTION II \u2014 DEFINITIONS\n\n(a) \"Home-Base",
+    "metadata": {
+      "source_file": "HO-0307_ed_03-24.txt",
+      "form_number": "HO-0307",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "0"
+    }
+  },
+  {
+    "chunk_id": "HO-0307_naive_001",
+    "text": "marily in the insured's home-based business. It does not\ninclude motor vehicles, aircraft, watercraft, or property insured under a\nseparate commercial policy.\n\nSECTION II \u2014 DEFINITIONS\n\n(a) \"Home-Based Business\" means a business operated by the named insured or\n    a resident relative primarily on the dwelling premises, with gross annual\n    revenue not exceeding $250,000. Businesses exceeding this threshold\n    require a separate commercial property policy.\n\n(b) \"Business Property\" means tangible property owned by the insured and\n    used primarily for business purposes, including computers, printers,\n    office furniture, tools, professional instruments, and inventory held\n    for sale.\n\n(c) \"Electronic Data\" means information, facts, or programs stored as or on,\n    created or used on, or transmitted to or from computer software, including\n    systems and applications software, hard or floppy disks, CD-ROMs, tapes,\n    drives, cells, data processing devices, or any other media which are used\n    with electronically controlled equipment.\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Increased Business Property Limit. Coverage C is amended to provide\n   coverage for business property on the dwelling premises up to the Home\n   Business Property Limit, less the policy deductible.\n\nB. Business Property in Transit. Business property in transit between the\n   dwelling premises and a temporary business location (e.g., trade show,\n   client site) is covered up to $5,000 per occurrence.",
+    "metadata": {
+      "source_file": "HO-0307_ed_03-24.txt",
+      "form_number": "HO-0307",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "1"
+    }
+  },
+  {
+    "chunk_id": "HO-0307_naive_002",
+    "text": "Business Property in Transit. Business property in transit between the\n   dwelling premises and a temporary business location (e.g., trade show,\n   client site) is covered up to $5,000 per occurrence.\n\nC. Accounts Receivable. The Company will pay up to $10,000 for loss of\n   accounts receivable records due to a covered peril, calculated as the\n   amount owed by customers less any amounts collected after the loss.\n\nD. Business Income Interruption. If a covered peril renders the business\n   property unusable, the Company will pay lost business income for up to\n   thirty (30) days, subject to a sub-limit of $5,000.\n\nSECTION IV \u2014 EXCLUSIONS TABLE\n\nThe following exclusions apply to coverage provided under this endorsement.\n\n+------+-------------------------------------------+--------------------------------------+\n| Code | Exclusion Title                           | Description                          |\n+------+-------------------------------------------+--------------------------------------+\n| E-24 | Professional Liability and Errors &       | Loss, damage, or liability arising   |\n|      | Omissions                                 | from professional services rendered  |\n|      |                                           | or advice given by the insured in    |\n|      |                                           | the course of the home-based         |\n|      |                                           | business. This includes claims for   |\n|      |                           ",
+    "metadata": {
+      "source_file": "HO-0307_ed_03-24.txt",
+      "form_number": "HO-0307",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "2"
+    }
+  },
+  {
+    "chunk_id": "HO-0307_naive_003",
+    "text": "                                | the course of the home-based         |\n|      |                                           | business. This includes claims for   |\n|      |                                           | negligence, errors, or omissions in  |\n|      |                                           | professional work product. Such      |\n|      |                                           | risks require a separate Professional|\n|      |                                           | Liability policy.                    |\n+------+-------------------------------------------+--------------------------------------+\n| E-25 | Business Property Stored Off-Premises     | Loss or damage to business property  |\n|      |                                           | stored at a location other than the  |\n|      |                                           | dwelling premises or while in transit |\n|      |                                           | exceeding the $5,000 in-transit      |\n|      |                                           | sub-limit. Property permanently      |\n|      |                                           | located at a co-working space,       |\n|      |                                           | warehouse, or other off-premises     |\n|      |                                           | location is not covered. Insureds    |\n|      |                                           | should obtain commercial inland      |\n|      |                                      ",
+    "metadata": {
+      "source_file": "HO-0307_ed_03-24.txt",
+      "form_number": "HO-0307",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "3"
+    }
+  },
+  {
+    "chunk_id": "HO-0307_naive_004",
+    "text": "                     | location is not covered. Insureds    |\n|      |                                           | should obtain commercial inland      |\n|      |                                           | marine coverage for such property.   |\n+------+-------------------------------------------+--------------------------------------+\n| E-26 | Electronic Data Loss                      | Loss of or damage to electronic data |\n|      |                                           | including corruption, unauthorized   |\n|      |                                           | access, cyber attack, ransomware, or |\n|      |                                           | programming error. This endorsement  |\n|      |                                           | covers only physical damage to the   |\n|      |                                           | media on which data is stored (e.g., |\n|      |                                           | a hard drive damaged by fire), not   |\n|      |                                           | the data itself. A separate Cyber    |\n|      |                                           | Liability policy is recommended.     |\n+------+-------------------------------------------+--------------------------------------+\n\nSECTION V \u2014 CONDITIONS\n\n1. Business Use Disclosure. The insured must disclose the nature of the\n   home-based business to the Company at inception or renewal. Material\n   changes in business type, revenue, or property values must be reported",
+    "metadata": {
+      "source_file": "HO-0307_ed_03-24.txt",
+      "form_number": "HO-0307",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "4"
+    }
+  },
+  {
+    "chunk_id": "HO-0307_naive_005",
+    "text": "isclosure. The insured must disclose the nature of the\n   home-based business to the Company at inception or renewal. Material\n   changes in business type, revenue, or property values must be reported\n   within thirty (30) days.\n\n2. Inventory Records. The insured must maintain current inventory records\n   for all business property. In the event of a claim, the burden of proof\n   for the existence and value of business property lies with the insured.\n\n3. Subrogation. The Company retains subrogation rights against third parties\n   responsible for loss to business property, including clients, vendors,\n   and delivery services.\n\n4. Other Insurance. If the insured has other insurance covering the same\n   business property, this endorsement shall be excess over such other\n   insurance.\n\nAll other terms and conditions of the policy remain unchanged.\n\n================================================================================\nEND OF ENDORSEMENT HO-0307 ed. 03-24\n================================================================================\n",
+    "metadata": {
+      "source_file": "HO-0307_ed_03-24.txt",
+      "form_number": "HO-0307",
+      "edition_date": "03-24",
+      "policy_line": "Homeowners",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "5"
+    }
+  },
+  {
+    "chunk_id": "HO-0308_naive_000",
+    "text": "================================================================================\nHOMEOWNERS POLICY ENDORSEMENT\n================================================================================\nForm Number:      HO-0308\nEdition:          03-24\nEffective Date:   September 1, 2024\nPolicy Line:      Dwelling Fire\nInsurer:          National Heritage Insurance Company\nState Filing:     Multi-State \u2014 All Jurisdictions\n================================================================================\n\nENDORSEMENT TITLE:  Equipment Breakdown Endorsement\n\nThis endorsement modifies the insurance provided under the Dwelling Fire\nPolicy to which it is attached. It provides coverage for direct physical\nloss caused by the sudden and accidental breakdown of covered equipment\nlocated on the insured premises, subject to the terms, exclusions, and\nconditions stated below.\n\nSECTION I \u2014 SCOPE AND PURPOSE\n\nStandard property policies exclude loss caused by mechanical or electrical\nbreakdown of equipment. This endorsement restores coverage for such losses\nwhen the breakdown is sudden and accidental, as defined herein. Coverage\napplies to permanently installed equipment serving the insured dwelling,\nincluding heating, ventilation, and air conditioning (HVAC) systems,\nelectrical panels, water heaters, well pumps, and built-in appliances.\n\nThe Equipment Breakdown Coverage Limit is equal to the Coverage A limit\nunless a separate limit is shown on the Declarations page. The deductible\napplicable to this end",
+    "metadata": {
+      "source_file": "HO-0308_ed_03-24.txt",
+      "form_number": "HO-0308",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "September 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "0"
+    }
+  },
+  {
+    "chunk_id": "HO-0308_naive_001",
+    "text": "umps, and built-in appliances.\n\nThe Equipment Breakdown Coverage Limit is equal to the Coverage A limit\nunless a separate limit is shown on the Declarations page. The deductible\napplicable to this endorsement is $500 or the policy deductible, whichever\nis greater.\n\nSECTION II \u2014 DEFINITIONS\n\n(a) \"Covered Equipment\" means any equipment listed on the Equipment Schedule\n    attached to this endorsement, or if no schedule is attached, any\n    permanently installed mechanical or electrical equipment that serves\n    the dwelling and is owned by the insured. Portable or plug-in appliances\n    (e.g., window air-conditioning units, portable heaters, kitchen counter\n    appliances) are not covered equipment unless specifically scheduled.\n\n(b) \"Breakdown\" means the sudden and accidental failure of covered equipment\n    that manifests as physical damage requiring repair or replacement. A\n    breakdown must originate within the equipment itself and must not result\n    from an external cause such as fire, lightning, windstorm, or vandalism\n    (which are covered under the base policy).\n\n(c) \"Expediting Expenses\" means reasonable extra costs to make temporary\n    repairs or to expedite permanent repairs, including overtime labor and\n    express shipping of replacement parts.\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Equipment Repair or Replacement. The Company will pay the cost to repair\n   or replace covered equipment that has suffered a breakdown, at replacement\n   cost, less the applicabl",
+    "metadata": {
+      "source_file": "HO-0308_ed_03-24.txt",
+      "form_number": "HO-0308",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "September 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "1"
+    }
+  },
+  {
+    "chunk_id": "HO-0308_naive_002",
+    "text": "AGE MODIFICATIONS\n\nA. Equipment Repair or Replacement. The Company will pay the cost to repair\n   or replace covered equipment that has suffered a breakdown, at replacement\n   cost, less the applicable deductible.\n\nB. Spoilage Coverage. If a breakdown of refrigeration or climate-control\n   equipment causes spoilage of perishable goods (e.g., food, medicine),\n   the Company will pay up to $2,500 per occurrence for spoiled goods.\n\nC. Expediting Expenses. The Company will pay expediting expenses up to\n   $5,000 per occurrence to restore the function of the covered equipment\n   as quickly as possible.\n\nD. Utility Interruption. If a breakdown at a utility provider's facility\n   causes a covered equipment breakdown at the insured premises, coverage\n   applies as if the breakdown occurred on-premises, provided the utility\n   interruption lasts more than twenty-four (24) hours.\n\nSECTION IV \u2014 EXCLUSIONS TABLE\n\nThe following exclusions apply to coverage provided under this endorsement.\n\n+------+-------------------------------------------+--------------------------------------+\n| Code | Exclusion Title                           | Description                          |\n+------+-------------------------------------------+--------------------------------------+\n| E-27 | Wear and Tear, Deterioration, or          | Loss or damage caused by or          |\n|      | Depletion                                 | resulting from wear and tear,        |\n|      |                                        ",
+    "metadata": {
+      "source_file": "HO-0308_ed_03-24.txt",
+      "form_number": "HO-0308",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "September 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "2"
+    }
+  },
+  {
+    "chunk_id": "HO-0308_naive_003",
+    "text": "ation, or          | Loss or damage caused by or          |\n|      | Depletion                                 | resulting from wear and tear,        |\n|      |                                           | gradual deterioration, rust,         |\n|      |                                           | corrosion, erosion, settling,        |\n|      |                                           | depletion, or exhaustion of a        |\n|      |                                           | component's useful life. Routine     |\n|      |                                           | maintenance, filter replacement,     |\n|      |                                           | lubrication, and calibration are     |\n|      |                                           | the responsibility of the insured    |\n|      |                                           | and are not covered events.          |\n+------+-------------------------------------------+--------------------------------------+\n| E-28 | Equipment Not on the Schedule             | Loss or damage to equipment that is  |\n|      |                                           | not listed on the Equipment Schedule |\n|      |                                           | (if a schedule is attached) or that  |\n|      |                                           | does not meet the definition of      |\n|      |                                           | Covered Equipment. This includes     |\n|      |                                           | portabl",
+    "metadata": {
+      "source_file": "HO-0308_ed_03-24.txt",
+      "form_number": "HO-0308",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "September 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "3"
+    }
+  },
+  {
+    "chunk_id": "HO-0308_naive_004",
+    "text": "       | does not meet the definition of      |\n|      |                                           | Covered Equipment. This includes     |\n|      |                                           | portable appliances, recreational    |\n|      |                                           | equipment, and equipment owned by    |\n|      |                                           | a tenant rather than the insured.    |\n+------+-------------------------------------------+--------------------------------------+\n| E-29 | Cosmetic Damage Only                      | Damage to the appearance of covered  |\n|      |                                           | equipment (scratches, dents,         |\n|      |                                           | discoloration) that does not impair  |\n|      |                                           | the equipment's function or          |\n|      |                                           | operation. Cosmetic damage without   |\n|      |                                           | mechanical or electrical failure     |\n|      |                                           | is not a covered breakdown.          |\n+------+-------------------------------------------+--------------------------------------+\n\nSECTION V \u2014 CONDITIONS\n\n1. Maintenance Obligation. The insured must maintain all covered equipment\n   in accordance with manufacturer recommendations. Failure to perform\n   routine maintenance may void coverage for a specific piece of equipment\n   if the ",
+    "metadata": {
+      "source_file": "HO-0308_ed_03-24.txt",
+      "form_number": "HO-0308",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "September 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "4"
+    }
+  },
+  {
+    "chunk_id": "HO-0308_naive_005",
+    "text": "insured must maintain all covered equipment\n   in accordance with manufacturer recommendations. Failure to perform\n   routine maintenance may void coverage for a specific piece of equipment\n   if the Company can demonstrate that the breakdown was directly caused by\n   the lack of maintenance.\n\n2. Professional Repair. Repairs to covered equipment must be performed by\n   a licensed and qualified technician. The Company may deny the claim if\n   the insured attempts unauthorized self-repair that worsens the damage.\n\n3. Salvage. The Company has the right to inspect and retain any equipment\n   or parts replaced under this endorsement. The insured must not dispose\n   of damaged equipment without the Company's written consent.\n\n4. Efficiency Standards. When equipment is replaced, the replacement must\n   meet or exceed current energy-efficiency standards (e.g., ENERGY STAR)\n   but need not match the brand or model of the original equipment.\n\nAll other terms and conditions of the policy remain unchanged.\n\n================================================================================\nEND OF ENDORSEMENT HO-0308 ed. 03-24\n================================================================================\n",
+    "metadata": {
+      "source_file": "HO-0308_ed_03-24.txt",
+      "form_number": "HO-0308",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "September 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "5"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_000",
+    "text": "================================================================================\nHOMEOWNERS POLICY ENDORSEMENT\n================================================================================\nForm Number:      HO-0309\nEdition:          03-24\nEffective Date:   March 1, 2024\nPolicy Line:      Dwelling Fire\nInsurer:          National Heritage Insurance Company\nState Filing:     Multi-State \u2014 All Jurisdictions\n================================================================================\n\nENDORSEMENT TITLE:  Scheduled Personal Property Endorsement\n\nThis endorsement modifies the insurance provided under the Dwelling Fire\nPolicy to which it is attached. It provides broader coverage and agreed-value\nprotection for specifically listed (scheduled) personal property items of\nhigh value, including jewelry, fine art, musical instruments, firearms,\ncollectibles, and electronic equipment.\n\nSECTION I \u2014 SCOPE AND PURPOSE\n\nThe standard policy limits coverage for certain categories of personal\nproperty (e.g., jewelry is limited to $1,500 for theft). This endorsement\nremoves those sub-limits for items individually listed and appraised on the\nPersonal Property Schedule attached to the Declarations page.\n\nScheduled items are covered on an open-perils, agreed-value basis. The\nCompany will pay the agreed value stated on the schedule for a total loss,\nor the cost of repair or replacement for a partial loss, without application\nof depreciation.\n\nCoverage applies worldwide \u2014 scheduled items are cove",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "0"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_001",
+    "text": "reed value stated on the schedule for a total loss,\nor the cost of repair or replacement for a partial loss, without application\nof depreciation.\n\nCoverage applies worldwide \u2014 scheduled items are covered whether on the\ndwelling premises, in transit, or at any other location, subject to the\nexclusions below.\n\nSECTION II \u2014 DEFINITIONS\n\n(a) \"Scheduled Item\" means an article of personal property individually\n    listed by description and appraised value on the Personal Property\n    Schedule. Each item must be supported by a professional appraisal or\n    purchase receipt dated within three (3) years of the policy effective\n    date or most recent renewal.\n\n(b) \"Agreed Value\" means the dollar amount stated on the Personal Property\n    Schedule for each scheduled item, as agreed between the insured and the\n    Company at the time of scheduling. The agreed value is the maximum the\n    Company will pay for a total loss of that item.\n\n(c) \"Mysterious Disappearance\" means the vanishing of an item of personal\n    property from a known location under unexplained circumstances, without\n    evidence of a specific peril such as theft, fire, or windstorm.\n\n(d) \"Pair or Set\" means two or more items that have a combined value\n    exceeding the sum of their individual values due to their association\n    with each other (e.g., a matched pair of earrings, a complete set of\n    china, a series of prints).\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Agreed-Value Coverage. For each scheduled item, the ",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "1"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_002",
+    "text": "\n    with each other (e.g., a matched pair of earrings, a complete set of\n    china, a series of prints).\n\nSECTION III \u2014 COVERAGE MODIFICATIONS\n\nA. Agreed-Value Coverage. For each scheduled item, the Company will pay up\n   to the agreed value for a total loss. No deductible applies to scheduled\n   items unless otherwise stated on the Declarations page.\n\nB. Partial Loss. For partial damage to a scheduled item, the Company will\n   pay the lesser of the cost to restore the item to its pre-loss condition\n   or the agreed value.\n\nC. Newly Acquired Items. Items acquired after the policy inception are\n   automatically covered for up to ninety (90) days at a maximum of $25,000\n   per item, provided the insured reports the item and provides an appraisal\n   within the ninety-day period.\n\nD. Worldwide Coverage. Scheduled items are covered at any location worldwide.\n   Coverage for items temporarily outside the United States or Canada is\n   limited to ninety (90) consecutive days per trip.\n\nSECTION IV \u2014 EXCLUSIONS TABLE\n\nThe following exclusions apply to coverage provided under this endorsement.\n\n+------+-------------------------------------------+--------------------------------------+\n| Code | Exclusion Title                           | Description                          |\n+------+-------------------------------------------+--------------------------------------+\n| E-30 | Mysterious Disappearance of Unscheduled   | Loss caused by mysterious             |\n|      | Items               ",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "2"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_003",
+    "text": "-------------------------------------+--------------------------------------+\n| E-30 | Mysterious Disappearance of Unscheduled   | Loss caused by mysterious             |\n|      | Items                                     | disappearance of any personal        |\n|      |                                           | property item that is NOT listed on  |\n|      |                                           | the Personal Property Schedule. Only |\n|      |                                           | items individually scheduled and     |\n|      |                                           | appraised receive coverage for       |\n|      |                                           | mysterious disappearance. Unscheduled|\n|      |                                           | items must show evidence of a named  |\n|      |                                           | peril (theft, fire, etc.) to be      |\n|      |                                           | covered under the base policy.       |\n+------+-------------------------------------------+--------------------------------------+\n| E-31 | Pairs and Sets \u2014 Partial Loss             | When part of a pair or set is lost   |\n|      |                                           | or damaged, the Company will pay the |\n|      |                                           | difference between the agreed value  |\n|      |                                           | of the complete pair or set and the  |\n|      |                                 ",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "3"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_004",
+    "text": "                          | difference between the agreed value  |\n|      |                                           | of the complete pair or set and the  |\n|      |                                           | value of the remaining item(s), but  |\n|      |                                           | will NOT pay the agreed value of the |\n|      |                                           | entire pair or set. The insured may  |\n|      |                                           | tender the undamaged item(s) to the  |\n|      |                                           | Company and receive the full agreed  |\n|      |                                           | value of the pair or set.            |\n+------+-------------------------------------------+--------------------------------------+\n| E-32 | Items in Undisclosed Storage Locations     | Loss of or damage to scheduled items |\n|      |                                           | stored at a location not disclosed   |\n|      |                                           | to the Company at the time of        |\n|      |                                           | scheduling or at renewal. The        |\n|      |                                           | insured must notify the Company      |\n|      |                                           | within thirty (30) days of moving    |\n|      |                                           | any scheduled item to a new storage  |\n|      |                                           |",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "4"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_005",
+    "text": "               | within thirty (30) days of moving    |\n|      |                                           | any scheduled item to a new storage  |\n|      |                                           | location. Failure to disclose        |\n|      |                                           | voids coverage for items at the      |\n|      |                                           | undisclosed location.                |\n+------+-------------------------------------------+--------------------------------------+\n\nSECTION V \u2014 CONDITIONS\n\n1. Appraisal Updates. The insured must provide updated appraisals for all\n   scheduled items every three (3) years. If an item's current market value\n   differs materially from the agreed value, the schedule shall be amended\n   at renewal.\n\n2. Proof of Loss. For any claim under this endorsement, the insured must\n   provide the original appraisal or purchase receipt, photographs of the\n   item, and a signed sworn statement of loss.\n\n3. Pair or Set Election. When filing a claim for part of a pair or set, the\n   insured must elect within sixty (60) days whether to retain the remaining\n   item(s) or tender them to the Company.\n\n4. Recovery and Salvage. If a lost scheduled item is recovered after the\n   Company has paid the claim, the insured may either return the claim\n   payment and reclaim the item, or relinquish all rights to the item.\n\nAll other terms and conditions of the policy remain unchanged.\n\n===============================================",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "5"
+    }
+  },
+  {
+    "chunk_id": "HO-0309_naive_006",
+    "text": "return the claim\n   payment and reclaim the item, or relinquish all rights to the item.\n\nAll other terms and conditions of the policy remain unchanged.\n\n================================================================================\nEND OF ENDORSEMENT HO-0309 ed. 03-24\n================================================================================\n",
+    "metadata": {
+      "source_file": "HO-0309_ed_03-24.txt",
+      "form_number": "HO-0309",
+      "edition_date": "03-24",
+      "policy_line": "Dwelling Fire",
+      "effective_date": "March 1, 2024",
+      "strategy": "naive_fixed",
+      "chunk_index": "6"
+    }
+  }
+]
