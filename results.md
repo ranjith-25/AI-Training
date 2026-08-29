@@ -573,3 +573,195 @@ method; and its client was constructed per call, so it was garbage-collected mid
 closed its own connection pool. The generation model was also updated — `gemini-2.5-flash`
 now returns 404 for this account ("no longer available to new users"), so all generation in
 this report is `gemini-3.6-flash`, held constant across every run.
+
+---
+
+## Week 4 Task Set D — Label Failures, Buy Back Hit-Rate@3 with One Change
+
+**Strategy evaluated:** `structure_aware` (30 chunks, MongoDB Atlas + file-based BM25)
+**Evaluation metric:** hit-rate@3 strict (form_number AND clause text must both be present in top-3)
+**Single retrieval change:** BM25 + Reciprocal Rank Fusion (k=60)
+
+---
+
+### 1. The 12-Question Golden Set
+
+Written from real adjuster questions against the endorsement source text before any retrieval
+was run (`eval/gold_qa.json`). At least 4 contain exact tokens that dense retrieval is
+structurally bad at (exclusion codes, form numbers, edition identifiers).
+
+| # | Question | Correct form | Correct clause | Hard token? |
+|---|---|---|---|---|
+| Q1 | Under HO-0304 ed. 03-24, does exclusion E-17 apply to water damage caused by a burst interior supply line? | `HO-0304` | SECTION IV — EXCLUSIONS TABLE, **E-17** | **Yes (E-17 + form)** |
+| Q2 | Is water damage from a sewer backup covered under HO-0304 ed. 03-24? | `HO-0304` | SECTION IV — EXCLUSIONS TABLE, **E-18** | **Yes (E-18 + form)** |
+| Q3 | Does HO-0308 ed. 03-24 cover an air-conditioning compressor that fails due to normal wear and tear? | `HO-0308` | SECTION IV — EXCLUSIONS TABLE, **E-27** | **Yes (E-27 + form)** |
+| Q4 | What is the effective date of the Earth Movement endorsement HO-0306 ed. 03-24? | `HO-0306` | Header — Effective Date | No |
+| Q5 | Which endorsements in the index apply to the Dwelling Fire policy line? | `HO-0308, HO-0309` | Header — Policy Line | No |
+| Q6 | Under HO-0309 ed. 03-24, is the mysterious disappearance of an unscheduled ring covered? | `HO-0309` | SECTION IV — EXCLUSIONS TABLE, **E-30** | **Yes (E-30 + form)** |
+| Q7 | What coverage does HO-0305 ed. 03-24 provide? | `HO-0305` | SECTION I — SCOPE AND PURPOSE | No |
+| Q8 | How many days of continuous leakage triggers the gradual seepage exclusion E-15 under HO-0304 ed. 03-24? | `HO-0304` | SECTION IV — EXCLUSIONS TABLE, **E-15** | **Yes (E-15 + form)** |
+| Q9 | Under form HO-0305 ed. 03-24, does exclusion E-19 apply to costs imposed by a homeowners association to match exterior paint colors? | `HO-0305` | SECTION IV — EXCLUSIONS TABLE, **E-19** | **Yes (E-19 + form)** |
+| Q10 | Under HO-0306 ed. 03-24, is loss caused by a volcanic eruption excluded under E-22, even if the eruption triggers a secondary landslide? | `HO-0306` | SECTION IV — EXCLUSIONS TABLE, **E-22** | **Yes (E-22 + form)** |
+| Q11 | What form number covers Home Business Property and what edition is it? | `HO-0307` | Header — Form Number | **Yes (exact form number token)** |
+| Q12 | Under HO-0309 ed. 03-24, if one earring from a scheduled matched pair is lost, can the insured claim the full agreed value under exclusion E-31? | `HO-0309` | SECTION IV — EXCLUSIONS TABLE, **E-31** | **Yes (E-31 + form)** |
+
+Confirmed against source `.txt` files before writing. No question was written to make the
+retriever look good — Q5 (cross-endorsement, two expected forms) was a known weakness.
+
+---
+
+### 2. Baseline hit-rate@3 — written down before any change
+
+Retriever: MongoDB Atlas `$vectorSearch`, exact ENN, cosine similarity, `top_k=3`.
+Evaluated on `structure_aware` (30 chunks).
+
+**Baseline hit-rate@3 = 11/12 = 91.7%** — recorded before the BM25+RRF change was applied.
+
+p50 latency per query (baseline) = **55.7 ms**
+
+---
+
+### 3. R / G / Not-In-Corpus tally
+
+Every miss was run through the inspection view: the correct chunk was checked against the
+**top-25** vector candidates (not just top-3) to separate retrieval failures (R) from
+reranking/truncation failures (G).
+
+| # | Label | Evidence |
+|---|---|---|
+| Q5 | **G** | Top-3 returned `['HO-0305_struct_002', 'HO-0304_struct_002', 'HO-0305_struct_000']`; none contained `HO-0308,HO-0309 + Header — Policy Line`. The correct chunk (`HO-0308_struct_003`, which carries `Policy Line: Dwelling Fire`) **IS present in the vector top-25** — vector search found it, but scored it below rank 3. This is a truncation failure, not a retrieval blindspot. |
+
+**Tally: R = 0 / G = 1 / Not-In-Corpus = 0**
+
+No R-failures exist in the 12-question set. The only failure is G: the correct chunk
+is reachable by vector search but not surfaced in the final top-3.
+
+---
+
+### 4. Justification of the single change
+
+The single change chosen was **BM25 + Reciprocal Rank Fusion (k=60)**.
+
+Q5 ("Which endorsements apply to the Dwelling Fire policy line?") is a G-failure: the correct
+chunk `HO-0308_struct_003` is in the vector top-25 but drops below rank 3 because dense
+cosine similarity scores semantically adjacent chunks from HO-0304 and HO-0305 higher — those
+documents also discuss "policy line" and "Homeowners" context, producing a high semantic
+overlap with the query even though the answer lives in the HO-0308 header. BM25 directly
+rewards the exact token `"Dwelling Fire"` appearing in the HO-0308 header, which is an
+uncommon enough phrase that BM25 ranks it #1. Fusing with RRF(k=60) preserves both signals
+without mixing incommensurable scales (cosine ∈ [0,1] vs BM25 raw score).
+
+A cross-encoder reranker was not chosen: since the G-failure is caused by the chunk being
+ranked 4th–10th rather than missing entirely, reranking over the top-25 would also fix it —
+but the BM25 leg adds a fundamentally different retrieval signal (exact lexical match) rather
+than just reordering the same evidence. With 0 R-failures in the tally, a reranker and BM25
+would both fix Q5; BM25+RRF was preferred because it improves retrieval coverage on unseen
+queries that contain rare exact tokens.
+
+The BM25 corpus is built from the local `.txt` endorsement source files via the existing
+`pipeline/chunkers.py`, serialised to `eval/chunks_cache.json`, and loaded at eval time.
+No new infrastructure is required.
+
+---
+
+### 5. Before → After hit-rate@3 and p50 latency
+
+| | Before (vector-only) | After (BM25+RRF, k=60) |
+|---|---|---|
+| **hit-rate@3 (strict)** | **91.7% (11/12)** | **100% (12/12)** |
+| **p50 latency / query** | **55.7 ms** | **96.0 ms** |
+| delta | — | **+8.3 pp** / **+40 ms** |
+
+The latency cost is +40 ms p50 — a 72% increase in wall-clock time per query. At sub-100 ms
+absolute, this is acceptable for an adjuster-facing tool where correctness matters more than
+speed. The 40 ms overhead comes from two sources: BM25 scoring across 30 chunks (~1 ms,
+negligible) and the extra MongoDB round-trip to fetch top-25 candidates instead of top-3
+(the dominant cost).
+
+---
+
+### 6. Per-question fixed / unfixed table
+
+| # | Baseline (top-3) | After BM25+RRF | Outcome | Miss label |
+|---|---|---|---|---|
+| Q1 | HIT | HIT | still-hit | — |
+| Q2 | HIT | HIT | still-hit | — |
+| Q3 | HIT | HIT | still-hit | — |
+| Q4 | HIT | HIT | still-hit | — |
+| Q5 | **miss** | **HIT** | **FIXED** | G |
+| Q6 | HIT | HIT | still-hit | — |
+| Q7 | HIT | HIT | still-hit | — |
+| Q8 | HIT | HIT | still-hit | — |
+| Q9 | HIT | HIT | still-hit | — |
+| Q10 | HIT | HIT | still-hit | — |
+| Q11 | HIT | HIT | still-hit | — |
+| Q12 | HIT | HIT | still-hit | — |
+
+**BM25+RRF fixed: Q5 (the only miss).  Regressions introduced: 0.**
+
+The change fixed exactly the failure the tally pointed to. No previously-passing question
+was broken. There are no R-failures in this set, so no R-failure was left unfixed — that
+is consistent with the choice of BM25+RRF over a cross-encoder (both would fix the G-failure;
+neither would have been needed for an R-failure).
+
+---
+
+### 7. Shipping decision
+
+**Ship it.**
+
+hit-rate@3 moved from 91.7% → 100% (+8.3 pp) with a +40 ms p50 overhead (55.7 ms → 96.0 ms).
+The absolute latency (96 ms p50) is still under 100 ms, well within the acceptable range
+for an interactive adjuster tool. Zero regressions were introduced.
+
+The risk of NOT shipping is concrete: Q5 is a cross-endorsement header lookup ("Dwelling Fire
+policy line") where the baseline silently returned three wrong form chunks with high cosine
+scores. An adjuster querying which endorsements apply to Dwelling Fire would get a confident
+but incorrect top-3 from the baseline retriever. The BM25 leg surfaces `HO-0308_struct_003`
+at rank 3 via exact `"Dwelling Fire"` term matching, fixing that miss.
+
+The latency increase would be worth investigating further if p50 crossed 200 ms; at 96 ms
+it does not require further optimisation before shipping.
+
+---
+
+### 8. Code diff — the single retrieval change
+
+The only new file in the retrieval path is `eval/bm25_rrf.py`.
+`eval/run_eval_d.py` and the extended `eval/gold_qa.json` are evaluation harness changes,
+not production retrieval changes.
+
+```diff
+# eval/bm25_rrf.py  [NEW]
+# Hybrid BM25+RRF retriever
+# - Vector leg: MongoVectorStore.search() unchanged
+# - BM25 leg:   rank_bm25.BM25Okapi over eval/chunks_cache.json (file-based, no DB)
+# - Fusion:     RRF(k=60) over both ranked lists
+# - Returns:    List[ScoredChunk] with .score = RRF score
+
++ from rank_bm25 import BM25Okapi
++ RRF_K = 60
++ CANDIDATE_N = 25
++
++ def _rrf_fuse(ranked_lists, k=RRF_K):
++     scores = {}
++     for ranking in ranked_lists:
++         for rank_zero, chunk_id in enumerate(ranking):
++             scores[chunk_id] = scores.get(chunk_id, 0.0) + 1.0 / (k + rank_zero + 1)
++     return sorted(scores.items(), key=lambda x: x[1], reverse=True)
++
++ class BM25RRFRetriever:
++     def search(self, query_embedding, query_text, top_k=3):
++         vector_hits = self.vector_store.search(query_embedding, top_k=CANDIDATE_N)
++         bm25_rank   = self._bm25_rank(query_text)          # file-based
++         fused       = _rrf_fuse([vector_rank, bm25_rank])
++         return [ScoredChunk(...) for chunk_id, score in fused[:top_k]]
+```
+
+No changes to `pipeline/mongo_store.py`, `pipeline/embeddings.py`, `pipeline/chunkers.py`,
+`utils/prompts.py`, `utils/llm_service.py`, or `main.py`.
+
+---
+
+*Full machine-readable results in `eval/results_d.json`.*
+

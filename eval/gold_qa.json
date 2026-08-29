@@ -70,5 +70,41 @@
     "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-15",
     "category": "exclusion_attachment",
     "answerable": true
+  },
+  {
+    "id": "Q9",
+    "question": "Under form HO-0305 ed. 03-24, does exclusion E-19 apply to costs imposed by a homeowners association to match exterior paint colors after a covered loss?",
+    "expected_answer": "Yes. Exclusion E-19 excludes costs incurred solely to meet aesthetic or cosmetic requirements imposed by a homeowners association unless mandated by a governmental building code. Matching exterior paint colors is listed as a specific example.",
+    "expected_form": "HO-0305",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-19",
+    "category": "exclusion_attachment",
+    "answerable": true
+  },
+  {
+    "id": "Q10",
+    "question": "Under HO-0306 ed. 03-24, is loss caused by a volcanic eruption excluded under E-22, even if the eruption triggers a secondary landslide?",
+    "expected_answer": "Yes. Exclusion E-22 excludes loss caused directly by volcanic eruption. The exclusion explicitly states it applies even if the volcanic activity triggers secondary earth movement such as landslide or mudflow.",
+    "expected_form": "HO-0306",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-22",
+    "category": "exclusion_attachment",
+    "answerable": true
+  },
+  {
+    "id": "Q11",
+    "question": "What form number covers Home Business Property and what edition is it?",
+    "expected_answer": "Form HO-0307, edition 03-24, is the Home Business Property Endorsement.",
+    "expected_form": "HO-0307",
+    "expected_clause": "Header — Form Number",
+    "category": "header_lookup",
+    "answerable": true
+  },
+  {
+    "id": "Q12",
+    "question": "Under HO-0309 ed. 03-24, if one earring from a scheduled matched pair is lost, can the insured claim the full agreed value of the pair under exclusion E-31?",
+    "expected_answer": "No. Exclusion E-31 states the Company pays only the difference between the agreed value of the complete pair and the value of the remaining item. However, the insured may tender the undamaged item to receive the full agreed value.",
+    "expected_form": "HO-0309",
+    "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-31",
+    "category": "exclusion_attachment",
+    "answerable": true
   }
 ]

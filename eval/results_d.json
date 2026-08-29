@@ -1,0 +1,1322 @@
+{
+  "timestamp": "2026-08-29 11:10:35",
+  "strategy": "structure_aware",
+  "top_k": 3,
+  "rrf_k": 60,
+  "candidate_n": 25,
+  "golden_set_size": 12,
+  "baseline": {
+    "retriever": "MongoDB Atlas $vectorSearch (exact ENN, cosine)",
+    "hit_rate_at_3": 0.9167,
+    "p50_latency_ms": 54.7,
+    "strict_hits": 11,
+    "details": [
+      {
+        "question_id": "Q1",
+        "question": "Under HO-0304 ed. 03-24, does exclusion E-17 apply to water damage caused by a burst interior supply line?",
+        "expected_form": "HO-0304",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-17",
+        "clause_locator": [
+          "exclusion_code",
+          "E-17"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0304"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_003",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.892,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8766,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0304_struct_000",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.872,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q2",
+        "question": "Is water damage from a sewer backup covered under HO-0304 ed. 03-24?",
+        "expected_form": "HO-0304",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-18",
+        "clause_locator": [
+          "exclusion_code",
+          "E-18"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 3,
+        "forms_covered": [
+          "HO-0304"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8812,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_000",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.879,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0304_struct_003",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.8788,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question": "Does HO-0308 ed. 03-24 cover an air-conditioning compressor that fails due to normal wear and tear?",
+        "expected_form": "HO-0308",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-27",
+        "clause_locator": [
+          "exclusion_code",
+          "E-27"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 2,
+        "forms_covered": [
+          "HO-0308"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0308_struct_000",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.8676,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0308_struct_003",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.8604,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0308_struct_001",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "DEFINITIONS",
+            "score": 0.8586,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q4",
+        "question": "What is the effective date of the Earth Movement endorsement HO-0306 ed. 03-24?",
+        "expected_form": "HO-0306",
+        "expected_clause": "Header — Effective Date",
+        "clause_locator": [
+          "header_field",
+          "Effective Date:"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0306"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0306_struct_000",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.9169,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0306_struct_002",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.9059,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_001",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "DEFINITIONS",
+            "score": 0.898,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q5",
+        "question": "Which endorsements in the index apply to the Dwelling Fire policy line?",
+        "expected_form": "HO-0308,HO-0309",
+        "expected_clause": "Header — Policy Line",
+        "clause_locator": [
+          "header_field",
+          "Policy Line:"
+        ],
+        "loose_hit": false,
+        "strict_hit": false,
+        "strict_first_rank": null,
+        "forms_covered": [],
+        "all_expected_forms_covered": false,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0305_struct_002",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.846,
+            "form_match": false,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8452,
+            "form_match": false,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0305_struct_000",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.8442,
+            "form_match": false,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q6",
+        "question": "Under HO-0309 ed. 03-24, is the mysterious disappearance of an unscheduled ring covered?",
+        "expected_form": "HO-0309",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-30",
+        "clause_locator": [
+          "exclusion_code",
+          "E-30"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0309"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0309_struct_003",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.8852,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0309_struct_001",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "DEFINITIONS",
+            "score": 0.8764,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0309_struct_002",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8699,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q7",
+        "question": "What coverage does HO-0305 ed. 03-24 provide?",
+        "expected_form": "HO-0305",
+        "expected_clause": "SECTION I — SCOPE AND PURPOSE",
+        "clause_locator": [
+          "section",
+          "SECTION I"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0305"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0305_struct_000",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.8612,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0305_struct_002",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8552,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_002",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8468,
+            "form_match": false,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q8",
+        "question": "How many days of continuous leakage triggers the gradual seepage exclusion E-15 under HO-0304 ed. 03-24?",
+        "expected_form": "HO-0304",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-15",
+        "clause_locator": [
+          "exclusion_code",
+          "E-15"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0304"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_003",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.8846,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_001",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "DEFINITIONS",
+            "score": 0.8577,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8463,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q9",
+        "question": "Under form HO-0305 ed. 03-24, does exclusion E-19 apply to costs imposed by a homeowners association to match exterior paint colors after a covered loss?",
+        "expected_form": "HO-0305",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-19",
+        "clause_locator": [
+          "exclusion_code",
+          "E-19"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0305"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0305_struct_003",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.9008,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0305_struct_002",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8513,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_003",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.8505,
+            "form_match": false,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q10",
+        "question": "Under HO-0306 ed. 03-24, is loss caused by a volcanic eruption excluded under E-22, even if the eruption triggers a secondary landslide?",
+        "expected_form": "HO-0306",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-22",
+        "clause_locator": [
+          "exclusion_code",
+          "E-22"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0306"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0306_struct_003",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.9011,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0306_struct_000",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.8689,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_002",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8567,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q11",
+        "question": "What form number covers Home Business Property and what edition is it?",
+        "expected_form": "HO-0307",
+        "expected_clause": "Header — Form Number",
+        "clause_locator": [
+          "header_field",
+          "Form Number:"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0307"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0307_struct_000",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.8701,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0307_struct_001",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "DEFINITIONS",
+            "score": 0.8652,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0307_struct_002",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.8644,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q12",
+        "question": "Under HO-0309 ed. 03-24, if one earring from a scheduled matched pair is lost, can the insured claim the full agreed value of the pair under exclusion E-31?",
+        "expected_form": "HO-0309",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-31",
+        "clause_locator": [
+          "exclusion_code",
+          "E-31"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0309"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0309_struct_003",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.8992,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0309_struct_000",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.8743,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0309_struct_001",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "DEFINITIONS",
+            "score": 0.8724,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      }
+    ]
+  },
+  "miss_labels": {
+    "Q5": {
+      "label": "G",
+      "evidence": "Top-3 returned ['HO-0305_struct_002', 'HO-0304_struct_002', 'HO-0305_struct_000']; none contained HO-0308,HO-0309 + Header — Policy Line. Correct chunk IS in top-25."
+    }
+  },
+  "tally": {
+    "R": 0,
+    "G": 1,
+    "Not-In-Corpus": 0
+  },
+  "single_change": "BM25+RRF fusion (k=60) — file-based BM25 over eval/chunks_cache.json",
+  "after": {
+    "retriever": "BM25+RRF (k=60): vector top-25 + BM25 top-25 fused",
+    "hit_rate_at_3": 1.0,
+    "p50_latency_ms": 86.2,
+    "strict_hits": 12,
+    "details": [
+      {
+        "question_id": "Q1",
+        "question": "Under HO-0304 ed. 03-24, does exclusion E-17 apply to water damage caused by a burst interior supply line?",
+        "expected_form": "HO-0304",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-17",
+        "clause_locator": [
+          "exclusion_code",
+          "E-17"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0304"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_003",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_001",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "DEFINITIONS",
+            "score": 0.0318,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.0315,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q2",
+        "question": "Is water damage from a sewer backup covered under HO-0304 ed. 03-24?",
+        "expected_form": "HO-0304",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-18",
+        "clause_locator": [
+          "exclusion_code",
+          "E-18"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0304"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_003",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0323,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.032,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0304_struct_000",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.032,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question": "Does HO-0308 ed. 03-24 cover an air-conditioning compressor that fails due to normal wear and tear?",
+        "expected_form": "HO-0308",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-27",
+        "clause_locator": [
+          "exclusion_code",
+          "E-27"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0308"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0308_struct_003",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0325,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0308_struct_001",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "DEFINITIONS",
+            "score": 0.0315,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0308_struct_004",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "CONDITIONS",
+            "score": 0.0305,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q4",
+        "question": "What is the effective date of the Earth Movement endorsement HO-0306 ed. 03-24?",
+        "expected_form": "HO-0306",
+        "expected_clause": "Header — Effective Date",
+        "clause_locator": [
+          "header_field",
+          "Effective Date:"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0306"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0306_struct_000",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.0325,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0306_struct_004",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "CONDITIONS",
+            "score": 0.032,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_002",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.032,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q5",
+        "question": "Which endorsements in the index apply to the Dwelling Fire policy line?",
+        "expected_form": "HO-0308,HO-0309",
+        "expected_clause": "Header — Policy Line",
+        "clause_locator": [
+          "header_field",
+          "Policy Line:"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 3,
+        "forms_covered": [
+          "HO-0308"
+        ],
+        "all_expected_forms_covered": false,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_002",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.032,
+            "form_match": false,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0307_struct_003",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0309,
+            "form_match": false,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0308_struct_003",
+            "form_number": "HO-0308",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0301,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q6",
+        "question": "Under HO-0309 ed. 03-24, is the mysterious disappearance of an unscheduled ring covered?",
+        "expected_form": "HO-0309",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-30",
+        "clause_locator": [
+          "exclusion_code",
+          "E-30"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0309"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0309_struct_003",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0309_struct_001",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "DEFINITIONS",
+            "score": 0.0323,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0309_struct_002",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.0313,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q7",
+        "question": "What coverage does HO-0305 ed. 03-24 provide?",
+        "expected_form": "HO-0305",
+        "expected_clause": "SECTION I — SCOPE AND PURPOSE",
+        "clause_locator": [
+          "section",
+          "SECTION I"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 2,
+        "forms_covered": [
+          "HO-0305"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0305_struct_004",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "CONDITIONS",
+            "score": 0.032,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0305_struct_000",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.0318,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0305_struct_002",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.0308,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q8",
+        "question": "How many days of continuous leakage triggers the gradual seepage exclusion E-15 under HO-0304 ed. 03-24?",
+        "expected_form": "HO-0304",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-15",
+        "clause_locator": [
+          "exclusion_code",
+          "E-15"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0304"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0304_struct_003",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0304_struct_001",
+            "form_number": "HO-0304",
+            "policy_line": "Homeowners",
+            "section": "DEFINITIONS",
+            "score": 0.0323,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_003",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0315,
+            "form_match": false,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q9",
+        "question": "Under form HO-0305 ed. 03-24, does exclusion E-19 apply to costs imposed by a homeowners association to match exterior paint colors after a covered loss?",
+        "expected_form": "HO-0305",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-19",
+        "clause_locator": [
+          "exclusion_code",
+          "E-19"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0305"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0305_struct_003",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0305_struct_004",
+            "form_number": "HO-0305",
+            "policy_line": "Homeowners",
+            "section": "CONDITIONS",
+            "score": 0.0315,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_003",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0315,
+            "form_match": false,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q10",
+        "question": "Under HO-0306 ed. 03-24, is loss caused by a volcanic eruption excluded under E-22, even if the eruption triggers a secondary landslide?",
+        "expected_form": "HO-0306",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-22",
+        "clause_locator": [
+          "exclusion_code",
+          "E-22"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0306"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0306_struct_003",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0306_struct_000",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.0323,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0306_struct_002",
+            "form_number": "HO-0306",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.0317,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      },
+      {
+        "question_id": "Q11",
+        "question": "What form number covers Home Business Property and what edition is it?",
+        "expected_form": "HO-0307",
+        "expected_clause": "Header — Form Number",
+        "clause_locator": [
+          "header_field",
+          "Form Number:"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0307"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0307_struct_000",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "SCOPE AND PURPOSE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0307_struct_002",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "COVERAGE MODIFICATIONS",
+            "score": 0.0317,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0307_struct_001",
+            "form_number": "HO-0307",
+            "policy_line": "Homeowners",
+            "section": "DEFINITIONS",
+            "score": 0.0315,
+            "form_match": true,
+            "clause_match": true
+          }
+        ]
+      },
+      {
+        "question_id": "Q12",
+        "question": "Under HO-0309 ed. 03-24, if one earring from a scheduled matched pair is lost, can the insured claim the full agreed value of the pair under exclusion E-31?",
+        "expected_form": "HO-0309",
+        "expected_clause": "SECTION IV — EXCLUSIONS TABLE, E-31",
+        "clause_locator": [
+          "exclusion_code",
+          "E-31"
+        ],
+        "loose_hit": true,
+        "strict_hit": true,
+        "strict_first_rank": 1,
+        "forms_covered": [
+          "HO-0309"
+        ],
+        "all_expected_forms_covered": true,
+        "top5": [
+          {
+            "rank": 1,
+            "chunk_id": "HO-0309_struct_003",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "EXCLUSIONS TABLE",
+            "score": 0.0328,
+            "form_match": true,
+            "clause_match": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "HO-0309_struct_001",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "DEFINITIONS",
+            "score": 0.0317,
+            "form_match": true,
+            "clause_match": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "HO-0309_struct_004",
+            "form_number": "HO-0309",
+            "policy_line": "Dwelling Fire",
+            "section": "CONDITIONS",
+            "score": 0.0315,
+            "form_match": true,
+            "clause_match": false
+          }
+        ]
+      }
+    ]
+  },
+  "per_question_table": [
+    {
+      "question_id": "Q1",
+      "question": "Under HO-0304 ed. 03-24, does exclusion E-17 apply to water damage caused by a burst interior supply line?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Is water damage from a sewer backup covered under HO-0304 ed. 03-24?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q3",
+      "question": "Does HO-0308 ed. 03-24 cover an air-conditioning compressor that fails due to normal wear and tear?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q4",
+      "question": "What is the effective date of the Earth Movement endorsement HO-0306 ed. 03-24?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q5",
+      "question": "Which endorsements in the index apply to the Dwelling Fire policy line?",
+      "baseline_hit": false,
+      "after_hit": true,
+      "change": "FIXED",
+      "miss_label": "G",
+      "miss_evidence": "Top-3 returned ['HO-0305_struct_002', 'HO-0304_struct_002', 'HO-0305_struct_000']; none contained HO-0308,HO-0309 + Header — Policy Line. Correct chunk IS in top-25."
+    },
+    {
+      "question_id": "Q6",
+      "question": "Under HO-0309 ed. 03-24, is the mysterious disappearance of an unscheduled ring covered?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q7",
+      "question": "What coverage does HO-0305 ed. 03-24 provide?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q8",
+      "question": "How many days of continuous leakage triggers the gradual seepage exclusion E-15 under HO-0304 ed. 03-24?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q9",
+      "question": "Under form HO-0305 ed. 03-24, does exclusion E-19 apply to costs imposed by a homeowners association to match exterior paint colors after a covered loss?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q10",
+      "question": "Under HO-0306 ed. 03-24, is loss caused by a volcanic eruption excluded under E-22, even if the eruption triggers a secondary landslide?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q11",
+      "question": "What form number covers Home Business Property and what edition is it?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "Under HO-0309 ed. 03-24, if one earring from a scheduled matched pair is lost, can the insured claim the full agreed value of the pair under exclusion E-31?",
+      "baseline_hit": true,
+      "after_hit": true,
+      "change": "still-hit",
+      "miss_label": null,
+      "miss_evidence": null
+    }
+  ],
+  "delta_hit_rate": 0.0833,
+  "delta_p50_ms": 31.5
+}
