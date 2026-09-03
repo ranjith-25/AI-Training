@@ -167,6 +167,19 @@ def structure_aware_chunks(
     sections = _split_into_sections(text)
     chunks: List[Chunk] = []
 
+    # --- Header-only chunk ---------------------------------------------------
+    chunks.append(Chunk(
+        chunk_id=f"{form}_struct_hdr",
+        text=header_block,
+        metadata={
+            **meta,
+            "strategy": "structure_aware",
+            "section": "HEADER",
+            "chunk_index": "hdr",
+        },
+    ))
+    # -------------------------------------------------------------------------
+
     for i, sec in enumerate(sections):
         # Clean the section title for metadata
         title_short = sec["title"].split("—")[-1].split("–")[-1].strip() \
