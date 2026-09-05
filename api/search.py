@@ -11,6 +11,7 @@ support an answer, the endpoint returns the refusal phrase.
 
 from __future__ import annotations
 
+import time
 from typing import List, Literal, Optional
 
 from fastapi import APIRouter, HTTPException
@@ -18,7 +19,8 @@ from pydantic import BaseModel, Field
 
 from pipeline.embeddings import embed_single
 from pipeline.mongo_store import MongoVectorStore
-from utils.llm_service import generate_with_gemini
+from utils.llm_service import generate_with_gemini, GEN_MODEL
+from utils.tracer import build_trace, log_trace
 from utils.prompts import RAG_SYSTEM_PROMPT, RAG_USER_TEMPLATE, REFUSAL_PHRASE
 
 router = APIRouter(prefix="/rag", tags=["RAG"])
@@ -111,7 +113,10 @@ async def ask(req: SearchRequest):
     """
     Grounded answer. Every claim carries a citation that resolves to a real
     chunk_id; anything the endorsements do not cover is refused outright.
+    Every call is traced to data/traces.jsonl with full provenance.
     """
+    t0 = time.perf_counter()
+
     try:
         hits = _search(req)
     except Exception as e:
@@ -119,6 +124,15 @@ async def ask(req: SearchRequest):
 
     if not hits:
         # Nothing retrieved is not a reason to improvise.
+        elapsed_ms = (time.perf_counter() - t0) * 1000
+        trace = build_trace(
+            question=req.query, strategy=req.strategy,
+            filter_metadata=_build_filter(req),
+            retrieved_chunks=[], prompt_text=RAG_SYSTEM_PROMPT,
+            model=GEN_MODEL, model_params=None,
+            raw_output=REFUSAL_PHRASE, refused=True, latency_ms=elapsed_ms,
+        )
+        log_trace(trace)
         return AskResponse(question=req.query, answer=REFUSAL_PHRASE,
                            refused=True, context_chunk_ids=[])
 
@@ -131,9 +145,35 @@ async def ask(req: SearchRequest):
               + RAG_USER_TEMPLATE.format(context=context, question=req.query))
 
     answer = await generate_with_gemini(prompt)
+    refused = REFUSAL_PHRASE.lower() in (answer or "").lower()
+    elapsed_ms = (time.perf_counter() - t0) * 1000
+
+    # --- Trace logging (PII redacted before write) ---
+    trace = build_trace(
+        question=req.query,
+        strategy=req.strategy,
+        filter_metadata=_build_filter(req),
+        retrieved_chunks=[
+            {
+                "chunk_id": sc.chunk_id,
+                "score": sc.score,
+                "form_number": sc.metadata.get("form_number", ""),
+                "section": sc.metadata.get("section", ""),
+            }
+            for sc in hits
+        ],
+        prompt_text=RAG_SYSTEM_PROMPT,
+        model=GEN_MODEL,
+        model_params=None,
+        raw_output=answer,
+        refused=refused,
+        latency_ms=elapsed_ms,
+    )
+    log_trace(trace)
+
     return AskResponse(
         question=req.query,
         answer=answer,
-        refused=REFUSAL_PHRASE.lower() in (answer or "").lower(),
+        refused=refused,
         context_chunk_ids=[sc.chunk_id for sc in hits],
     )

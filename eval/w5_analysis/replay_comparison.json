@@ -1,0 +1,27 @@
+{
+  "trace_id": "308526d7-9d75-4a49-8bc2-6088d42722c3",
+  "question": "Under the HO-0304 ed. 01-22, what was the previous gradual seepage time threshold?",
+  "chunks_match": true,
+  "original_chunks": [
+    "HO-0304_struct_001",
+    "HO-0304_struct_003",
+    "HO-0304_struct_002",
+    "HO-0304_struct_hdr",
+    "HO-0304_struct_000"
+  ],
+  "replayed_chunks": [
+    "HO-0304_struct_001",
+    "HO-0304_struct_003",
+    "HO-0304_struct_002",
+    "HO-0304_struct_hdr",
+    "HO-0304_struct_000"
+  ],
+  "original_refused": false,
+  "replayed_refused": false,
+  "refused_match": true,
+  "prompt_version_match": true,
+  "model_match": true,
+  "original_output_preview": "Under HO-0304, the previous gradual seepage time threshold was 14 days. [Source: HO-0304_struct_001 | HO-0304, DEFINITIONS]",
+  "replayed_output_preview": "Under HO-0304, the previous gradual seepage time threshold was 14 days. [Source: HO-0304_struct_001 | HO-0304, DEFINITIONS]",
+  "missing_fields_in_original": []
+}

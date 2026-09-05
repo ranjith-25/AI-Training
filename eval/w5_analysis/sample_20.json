@@ -1,0 +1,886 @@
+{
+  "seed": 42,
+  "sample_size": 20,
+  "traces": [
+    {
+      "index": 1,
+      "trace_id": "308526d7-9d75-4a49-8bc2-6088d42722c3",
+      "question_id": "CQ-41",
+      "question_category": "wrong_edition",
+      "question": "Under the HO-0304 ed. 01-22, what was the previous gradual seepage time threshold?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0304_struct_001",
+          "score": 0.8519,
+          "form_number": "HO-0304",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_003",
+          "score": 0.8396,
+          "form_number": "HO-0304",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.838,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_hdr",
+          "score": 0.8323,
+          "form_number": "HO-0304",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8303,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        }
+      ],
+      "raw_output": "Under HO-0304, the previous gradual seepage time threshold was 14 days. [Source: HO-0304_struct_001 | HO-0304, DEFINITIONS]",
+      "latency_ms": 515.4,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 2,
+      "trace_id": "94236248-d4fc-4b9c-a5b6-b1023ec779c5",
+      "question_id": "CQ-08",
+      "question_category": "exclusion_application",
+      "question": "Under HO-0305 ed. 03-24, does the ordinance or law coverage apply to cosmetic requirements imposed by an HOA?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0305_struct_003",
+          "score": 0.8897,
+          "form_number": "HO-0305",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0305_struct_hdr",
+          "score": 0.8883,
+          "form_number": "HO-0305",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0305_struct_000",
+          "score": 0.8879,
+          "form_number": "HO-0305",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0305_struct_002",
+          "score": 0.8847,
+          "form_number": "HO-0305",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0305_struct_004",
+          "score": 0.8827,
+          "form_number": "HO-0305",
+          "section": "CONDITIONS"
+        }
+      ],
+      "raw_output": "This is not excluded under the stated provisions. [Source: HO-0305_struct_003 | HO-0305, EXCLUSIONS TABLE]",
+      "latency_ms": 493.3,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 3,
+      "trace_id": "f964e7c9-2960-44d8-8654-8f70c449c45d",
+      "question_id": "CQ-02",
+      "question_category": "numeric_threshold",
+      "question": "Under HO-0304, what is the per-occurrence sub-limit for water damage to the dwelling structure?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.8865,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8783,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_hdr",
+          "score": 0.8684,
+          "form_number": "HO-0304",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0304_struct_001",
+          "score": 0.8648,
+          "form_number": "HO-0304",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_004",
+          "score": 0.8614,
+          "form_number": "HO-0304",
+          "section": "CONDITIONS"
+        }
+      ],
+      "raw_output": "The sub-limit is $100,000 for this occurrence. [Source: HO-0304_struct_002 | HO-0304, COVERAGE MODIFICATIONS]",
+      "latency_ms": 482.6,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 4,
+      "trace_id": "b0fdb569-a3ff-404a-873a-ec44df21ecfd",
+      "question_id": "CQ-18",
+      "question_category": "edge_case",
+      "question": "Under HO-0306, is mine subsidence covered if the insured has state fund coverage?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_001",
+          "score": 0.8601,
+          "form_number": "HO-0306",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_003",
+          "score": 0.8583,
+          "form_number": "HO-0306",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.8532,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.846,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_hdr",
+          "score": 0.8456,
+          "form_number": "HO-0306",
+          "section": "HEADER"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0306_struct_001 | HO-0306, DEFINITIONS]",
+      "latency_ms": 499.3,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 5,
+      "trace_id": "1ba99162-c42b-4ecc-8358-289b371c26fd",
+      "question_id": "CQ-16",
+      "question_category": "exclusion_application",
+      "question": "Does HO-0306 cover damage from volcanic eruption?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_003",
+          "score": 0.8714,
+          "form_number": "HO-0306",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.8687,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.8644,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_hdr",
+          "score": 0.8614,
+          "form_number": "HO-0306",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0306_struct_004",
+          "score": 0.8543,
+          "form_number": "HO-0306",
+          "section": "CONDITIONS"
+        }
+      ],
+      "raw_output": "This loss is excluded because it falls under the general deterioration clause. [Source: HO-0306_struct_003 | HO-0306, EXCLUSIONS TABLE]",
+      "latency_ms": 481.0,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 6,
+      "trace_id": "6b5fb709-07a9-4673-9617-663193aa2717",
+      "question_id": "CQ-15",
+      "question_category": "condition",
+      "question": "Under HO-0306, how are multiple earthquake events within 72 hours treated for deductible purposes?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.8868,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.8771,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_004",
+          "score": 0.8732,
+          "form_number": "HO-0306",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_hdr",
+          "score": 0.8636,
+          "form_number": "HO-0306",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0306_struct_001",
+          "score": 0.8503,
+          "form_number": "HO-0306",
+          "section": "DEFINITIONS"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0306_struct_000 | HO-0306, SCOPE AND PURPOSE]",
+      "latency_ms": 473.4,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 7,
+      "trace_id": "dc99df19-06fd-4f21-a642-7c9d5a9ef9bc",
+      "question_id": "CQ-09",
+      "question_category": "numeric_threshold",
+      "question": "What is the combined limit for Ordinance or Law coverage under HO-0305?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0305_struct_000",
+          "score": 0.9036,
+          "form_number": "HO-0305",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0305_struct_hdr",
+          "score": 0.8876,
+          "form_number": "HO-0305",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0305_struct_004",
+          "score": 0.8875,
+          "form_number": "HO-0305",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0305_struct_002",
+          "score": 0.8864,
+          "form_number": "HO-0305",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0305_struct_001",
+          "score": 0.8735,
+          "form_number": "HO-0305",
+          "section": "DEFINITIONS"
+        }
+      ],
+      "raw_output": "The limit is subject to the provisions in Section III. [Source: HO-0305_struct_000 | HO-0305, SCOPE AND PURPOSE]",
+      "latency_ms": 529.5,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 8,
+      "trace_id": "c76099eb-ea7b-4dc9-a401-86361da7f541",
+      "question_id": "CQ-07",
+      "question_category": "exclusion_application",
+      "question": "If a pipe has been leaking for 20 days and damaged the subflooring, is that covered under HO-0304?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.8694,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_001",
+          "score": 0.8672,
+          "form_number": "HO-0304",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8605,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_hdr",
+          "score": 0.8583,
+          "form_number": "HO-0304",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0304_struct_003",
+          "score": 0.8547,
+          "form_number": "HO-0304",
+          "section": "EXCLUSIONS TABLE"
+        }
+      ],
+      "raw_output": "This loss is excluded because it falls under the general deterioration clause. [Source: HO-0304_struct_002 | HO-0304, COVERAGE MODIFICATIONS]",
+      "latency_ms": 507.6,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 9,
+      "trace_id": "45ab2b23-bbe6-45c6-b50d-26db8e271c6c",
+      "question_id": "CQ-35",
+      "question_category": "cross_endorsement",
+      "question": "Which endorsements in the index apply to the Dwelling Fire policy line?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0305_struct_002",
+          "score": 0.846,
+          "form_number": "HO-0305",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.8452,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0305_struct_000",
+          "score": 0.8442,
+          "form_number": "HO-0305",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.8438,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8427,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        }
+      ],
+      "raw_output": "Only HO-0305 applies to this situation. [Source: HO-0305_struct_002 | HO-0305, COVERAGE MODIFICATIONS]",
+      "latency_ms": 471.0,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 10,
+      "trace_id": "e75efea5-3e81-4490-936a-554d3dfc8ce8",
+      "question_id": "CQ-06",
+      "question_category": "condition",
+      "question": "Does HO-0304 require the insured to have their plumbing inspected? What is the time frame?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0304_struct_004",
+          "score": 0.8647,
+          "form_number": "HO-0304",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_hdr",
+          "score": 0.8639,
+          "form_number": "HO-0304",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.8625,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8614,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_001",
+          "score": 0.8602,
+          "form_number": "HO-0304",
+          "section": "DEFINITIONS"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0304_struct_004 | HO-0304, CONDITIONS]",
+      "latency_ms": 489.7,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 11,
+      "trace_id": "6db01232-032e-4e88-b612-68e5d5bc9523",
+      "question_id": "CQ-38",
+      "question_category": "out_of_scope",
+      "question": "What is the reserve-setting threshold for claim [REDACTED-CLAIM]?",
+      "refused": true,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0309_struct_003",
+          "score": 0.7976,
+          "form_number": "HO-0309",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0305_struct_000",
+          "score": 0.7948,
+          "form_number": "HO-0305",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_003",
+          "score": 0.7929,
+          "form_number": "HO-0304",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0307_struct_000",
+          "score": 0.7928,
+          "form_number": "HO-0307",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.7926,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        }
+      ],
+      "raw_output": "I cannot answer this question from the available endorsement documents.",
+      "latency_ms": 485.5,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 12,
+      "trace_id": "4d86f958-978b-4792-aa87-549d8bfd84a6",
+      "question_id": "CQ-28",
+      "question_category": "numeric_threshold",
+      "question": "What is the Equipment Breakdown deductible under HO-0308?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0308_struct_000",
+          "score": 0.9038,
+          "form_number": "HO-0308",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0308_struct_hdr",
+          "score": 0.8919,
+          "form_number": "HO-0308",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0308_struct_002",
+          "score": 0.8895,
+          "form_number": "HO-0308",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0308_struct_001",
+          "score": 0.8884,
+          "form_number": "HO-0308",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0308_struct_004",
+          "score": 0.8741,
+          "form_number": "HO-0308",
+          "section": "CONDITIONS"
+        }
+      ],
+      "raw_output": "The sub-limit is $100,000 for this occurrence. [Source: HO-0308_struct_000 | HO-0308, SCOPE AND PURPOSE]",
+      "latency_ms": 492.5,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 13,
+      "trace_id": "51e5ff19-2bc5-4675-be60-048017612e2f",
+      "question_id": "CQ-03",
+      "question_category": "edge_case",
+      "question": "Is gradual seepage over 10 days excluded under HO-0304?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0304_struct_003",
+          "score": 0.8621,
+          "form_number": "HO-0304",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_001",
+          "score": 0.8583,
+          "form_number": "HO-0304",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.8438,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8414,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_hdr",
+          "score": 0.8357,
+          "form_number": "HO-0304",
+          "section": "HEADER"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0304_struct_003 | HO-0304, EXCLUSIONS TABLE]",
+      "latency_ms": 526.0,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 14,
+      "trace_id": "d8024c34-071b-466d-a7a5-07077808b876",
+      "question_id": "CQ-48",
+      "question_category": "definition",
+      "question": "Under HO-0308, what are Expediting Expenses?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0308_struct_002",
+          "score": 0.858,
+          "form_number": "HO-0308",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0308_struct_001",
+          "score": 0.8579,
+          "form_number": "HO-0308",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0308_struct_000",
+          "score": 0.835,
+          "form_number": "HO-0308",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0308_struct_hdr",
+          "score": 0.8324,
+          "form_number": "HO-0308",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0305_struct_002",
+          "score": 0.8297,
+          "form_number": "HO-0305",
+          "section": "COVERAGE MODIFICATIONS"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0308_struct_002 | HO-0308, COVERAGE MODIFICATIONS]",
+      "latency_ms": 511.6,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 15,
+      "trace_id": "247b46e4-b915-4daa-82a4-02f182745edd",
+      "question_id": "CQ-50",
+      "question_category": "edge_case",
+      "question": "If an earthquake triggers a landslide that damages the dwelling, does exclusion E-22 in HO-0306 apply or is it covered as earth movement?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_003",
+          "score": 0.8926,
+          "form_number": "HO-0306",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.8868,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.8807,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_hdr",
+          "score": 0.8726,
+          "form_number": "HO-0306",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0306_struct_001",
+          "score": 0.8651,
+          "form_number": "HO-0306",
+          "section": "DEFINITIONS"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0306_struct_003 | HO-0306, EXCLUSIONS TABLE]",
+      "latency_ms": 499.0,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 16,
+      "trace_id": "de69ca4f-9f89-4776-b4f3-e1bb344f0de7",
+      "question_id": "CQ-14",
+      "question_category": "numeric_threshold",
+      "question": "What is the Earth Movement Deductible under HO-0306, and how is it expressed?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.9103,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.8977,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_hdr",
+          "score": 0.8946,
+          "form_number": "HO-0306",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0306_struct_004",
+          "score": 0.8824,
+          "form_number": "HO-0306",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_001",
+          "score": 0.8806,
+          "form_number": "HO-0306",
+          "section": "DEFINITIONS"
+        }
+      ],
+      "raw_output": "The limit is subject to the provisions in Section III. [Source: HO-0306_struct_000 | HO-0306, SCOPE AND PURPOSE]",
+      "latency_ms": 513.7,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 17,
+      "trace_id": "f4254f8b-e1df-4965-80c2-daebcb2799c0",
+      "question_id": "CQ-45",
+      "question_category": "correct_coverage",
+      "question": "Under HO-0306, if a government orders evacuation due to an imminent landslide, does the endorsement cover hotel costs?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_004",
+          "score": 0.885,
+          "form_number": "HO-0306",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_002",
+          "score": 0.8762,
+          "form_number": "HO-0306",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0306_struct_000",
+          "score": 0.874,
+          "form_number": "HO-0306",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0306_struct_hdr",
+          "score": 0.8638,
+          "form_number": "HO-0306",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0306_struct_003",
+          "score": 0.8609,
+          "form_number": "HO-0306",
+          "section": "EXCLUSIONS TABLE"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0306_struct_004 | HO-0306, CONDITIONS]",
+      "latency_ms": 509.4,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 18,
+      "trace_id": "88976802-17e3-4a95-b1d5-7cf22d40e6cf",
+      "question_id": "CQ-33",
+      "question_category": "definition",
+      "question": "Does HO-0309 cover mysterious disappearance of a scheduled item?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0309_struct_003",
+          "score": 0.8782,
+          "form_number": "HO-0309",
+          "section": "EXCLUSIONS TABLE"
+        },
+        {
+          "chunk_id": "HO-0309_struct_001",
+          "score": 0.8686,
+          "form_number": "HO-0309",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0309_struct_002",
+          "score": 0.8642,
+          "form_number": "HO-0309",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0309_struct_004",
+          "score": 0.8614,
+          "form_number": "HO-0309",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0309_struct_000",
+          "score": 0.8597,
+          "form_number": "HO-0309",
+          "section": "SCOPE AND PURPOSE"
+        }
+      ],
+      "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0309_struct_003 | HO-0309, EXCLUSIONS TABLE]",
+      "latency_ms": 487.1,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 19,
+      "trace_id": "2d3d620b-2127-40b1-9264-a458f52e4cf1",
+      "question_id": "CQ-37",
+      "question_category": "cross_endorsement",
+      "question": "Which endorsements require the insured to get a professional inspection after a loss?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0306_struct_004",
+          "score": 0.8519,
+          "form_number": "HO-0306",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0305_struct_004",
+          "score": 0.8419,
+          "form_number": "HO-0305",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0308_struct_004",
+          "score": 0.8409,
+          "form_number": "HO-0308",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0309_struct_004",
+          "score": 0.8408,
+          "form_number": "HO-0309",
+          "section": "CONDITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_004",
+          "score": 0.8395,
+          "form_number": "HO-0304",
+          "section": "CONDITIONS"
+        }
+      ],
+      "raw_output": "Only HO-0306 applies to this situation. [Source: HO-0306_struct_004 | HO-0306, CONDITIONS]",
+      "latency_ms": 464.9,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    },
+    {
+      "index": 20,
+      "trace_id": "f1e53b47-512f-4d67-a954-4b15aa9b7e13",
+      "question_id": "CQ-47",
+      "question_category": "ambiguous",
+      "question": "Does HO-0304 cover damage to a detached guest house from a burst pipe?",
+      "refused": false,
+      "retrieved_chunks": [
+        {
+          "chunk_id": "HO-0304_struct_002",
+          "score": 0.8683,
+          "form_number": "HO-0304",
+          "section": "COVERAGE MODIFICATIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_000",
+          "score": 0.8661,
+          "form_number": "HO-0304",
+          "section": "SCOPE AND PURPOSE"
+        },
+        {
+          "chunk_id": "HO-0304_struct_001",
+          "score": 0.8606,
+          "form_number": "HO-0304",
+          "section": "DEFINITIONS"
+        },
+        {
+          "chunk_id": "HO-0304_struct_hdr",
+          "score": 0.8563,
+          "form_number": "HO-0304",
+          "section": "HEADER"
+        },
+        {
+          "chunk_id": "HO-0304_struct_004",
+          "score": 0.8482,
+          "form_number": "HO-0304",
+          "section": "CONDITIONS"
+        }
+      ],
+      "raw_output": "The damage is fully covered without any deductible applied. [Source: HO-0304_struct_002 | HO-0304, COVERAGE MODIFICATIONS]",
+      "latency_ms": 492.2,
+      "model": "gemini-3.6-flash (mocked)",
+      "prompt_version": "063dfdb279f4"
+    }
+  ]
+}
