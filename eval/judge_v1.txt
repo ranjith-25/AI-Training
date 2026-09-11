@@ -1,0 +1,8 @@
+You are an expert claims adjuster. Evaluate the following claim summary for accuracy.
+
+Does the summary accurately reflect the coverage or denial decision, applying the correct policy provisions and avoiding logical contradictions or hallucinations?
+
+Output exactly "1" for PASS or "0" for FAIL. Do not output anything else.
+
+[Claim Summary]:
+{summary}

@@ -1,0 +1,1 @@
+By adding few-shot examples that explicitly penalize the misapplication of broad exclusions (e.g., general deterioration) to specific named perils (e.g., sudden pipe bursts), the judge will correctly fail summaries that hallucinate these overarching denials.
