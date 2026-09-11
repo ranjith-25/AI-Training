@@ -1,0 +1,236 @@
+[
+  {
+    "case_id": "CASE-01",
+    "claim_number": "CLM-2024-10001",
+    "date_of_loss": "2024-08-01",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Broad Exclusion Misapplication",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10001 for loss on 2024-08-01. Deductible $1500 applies. The loss is denied due to the general deterioration exclusion (Form HO-0304), despite the adjuster noting a sudden pipe burst."
+  },
+  {
+    "case_id": "CASE-02",
+    "claim_number": "CLM-2024-10002",
+    "date_of_loss": "2024-08-02",
+    "deductible_amount": "$2000",
+    "taxonomy_mode": "Numeric Sub-Limit Blindness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10002 for loss on 2024-08-02. Deductible $2000 applies. Payment is capped at the $10,000 per-occurrence sub-limit for water damage."
+  },
+  {
+    "case_id": "CASE-03",
+    "claim_number": "CLM-2024-10003",
+    "date_of_loss": "2024-08-03",
+    "deductible_amount": "$2500",
+    "taxonomy_mode": "Single-Endorsement Tunnel Vision",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10003 for loss on 2024-08-03. Deductible $2500 applies. Claim denied based on HO-0304, ignoring the overriding coverage provided in HO-0309."
+  },
+  {
+    "case_id": "CASE-04",
+    "claim_number": "CLM-2024-10004",
+    "date_of_loss": "2024-08-04",
+    "deductible_amount": "$3000",
+    "taxonomy_mode": "Definitional Tone Deafness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10004 for loss on 2024-08-04. Deductible $3000 applies. The summary correctly defines 'Breakdown' according to HO-0308."
+  },
+  {
+    "case_id": "CASE-05",
+    "claim_number": "CLM-2024-10005",
+    "date_of_loss": "2024-08-05",
+    "deductible_amount": "$1000",
+    "taxonomy_mode": "Ambiguity Overconfidence",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10005 for loss on 2024-08-05. Deductible $1000 applies. The claim is denied because it's not covered."
+  },
+  {
+    "case_id": "CASE-06",
+    "claim_number": "CLM-2024-10006",
+    "date_of_loss": "2024-08-06",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Wrong Form Edition Confusion",
+    "is_regression": false,
+    "summary": "Claim CLAIM 2024-10006 for loss on 2024-08-06. Deductible $1500 applies. The loss is covered, correctly applying the current 2024 edition rules."
+  },
+  {
+    "case_id": "CASE-07",
+    "claim_number": "CLM-2024-10007",
+    "date_of_loss": "2024-08-07",
+    "deductible_amount": "$2000",
+    "taxonomy_mode": "Broad Exclusion Misapplication",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10007 for loss on 2024-08-07. Deductible $2000 applies. The loss is denied due to the general deterioration exclusion (Form HO-0304), despite the adjuster noting a sudden pipe burst."
+  },
+  {
+    "case_id": "CASE-08",
+    "claim_number": "CLM-2024-10008",
+    "date_of_loss": "2024-08-08",
+    "deductible_amount": "$2500",
+    "taxonomy_mode": "Numeric Sub-Limit Blindness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10008 for loss on 2024-08-08. Deductible $2500 applies. Payment is capped at the $10,000 per-occurrence sub-limit for water damage."
+  },
+  {
+    "case_id": "CASE-09",
+    "claim_number": "CLM-2024-10009",
+    "date_of_loss": "2024-08-09",
+    "deductible_amount": "$3000",
+    "taxonomy_mode": "Single-Endorsement Tunnel Vision",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10009 for loss on 2024-08-09. Deductible $3000 applies. Claim denied based on HO-0304, ignoring the overriding coverage provided in HO-0309."
+  },
+  {
+    "case_id": "CASE-10",
+    "claim_number": "CLM-2024-10010",
+    "date_of_loss": "2024-08-10",
+    "deductible_amount": "$1000",
+    "taxonomy_mode": "Definitional Tone Deafness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10010 for loss on 2024-08-10. Deductible $1000 applies. The summary correctly defines 'Breakdown' according to HO-0308."
+  },
+  {
+    "case_id": "CASE-11",
+    "claim_number": "CLM-2024-10011",
+    "date_of_loss": "2024-08-11",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Ambiguity Overconfidence",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10011 for loss on 2024-08-11. Deductible $1500 applies. The summary confidently asserts the loss is fully covered despite missing information about the cause of loss."
+  },
+  {
+    "case_id": "CASE-12",
+    "claim_number": "CLM-2024-10012",
+    "date_of_loss": "2024-08-12",
+    "deductible_amount": "$2000",
+    "taxonomy_mode": "Wrong Form Edition Confusion",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10012 for loss on 2024-08-12. Deductible $2000 applies. The loss is covered, correctly applying the current 2024 edition rules."
+  },
+  {
+    "case_id": "CASE-13",
+    "claim_number": "CLM-2024-10013",
+    "date_of_loss": "2024-08-13",
+    "deductible_amount": "$2500",
+    "taxonomy_mode": "Broad Exclusion Misapplication",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10013 for loss on 2024-08-13. Deductible $2500 applies. The loss is denied due to the general deterioration exclusion (Form HO-0304), despite the adjuster noting a sudden pipe burst."
+  },
+  {
+    "case_id": "CASE-14",
+    "claim_number": "CLM-2024-10014",
+    "date_of_loss": "2024-08-14",
+    "deductible_amount": "$3000",
+    "taxonomy_mode": "Numeric Sub-Limit Blindness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10014 for loss on 2024-08-14. Deductible $3000 applies. Payment is capped at the $10,000 per-occurrence sub-limit for water damage."
+  },
+  {
+    "case_id": "CASE-15",
+    "claim_number": "CLM-2024-10015",
+    "date_of_loss": "2024-08-15",
+    "deductible_amount": "$1000",
+    "taxonomy_mode": "Single-Endorsement Tunnel Vision",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10015 for loss on 2024-08-15. Deductible $1000 applies. Claim denied based on HO-0304, ignoring the overriding coverage provided in HO-0309."
+  },
+  {
+    "case_id": "CASE-16",
+    "claim_number": "CLM-2024-10016",
+    "date_of_loss": "2024-08-16",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Definitional Tone Deafness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10016 for loss on 2024-08-16. Deductible $1500 applies. The summary correctly defines 'Breakdown' according to HO-0308."
+  },
+  {
+    "case_id": "CASE-17",
+    "claim_number": "CLM-2024-10017",
+    "date_of_loss": "2024-08-17",
+    "deductible_amount": "$2000",
+    "taxonomy_mode": "Ambiguity Overconfidence",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10017 for loss on 2024-08-17. Deductible $2000 applies. The summary confidently asserts the loss is fully covered despite missing information about the cause of loss."
+  },
+  {
+    "case_id": "CASE-18",
+    "claim_number": "CLM-2024-10018",
+    "date_of_loss": "2024-08-18",
+    "deductible_amount": "$2500",
+    "taxonomy_mode": "Wrong Form Edition Confusion",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10018 for loss on 2024-08-18. Deductible $2500 applies. The loss is covered, correctly applying the current 2024 edition rules."
+  },
+  {
+    "case_id": "CASE-19",
+    "claim_number": "CLM-2024-10019",
+    "date_of_loss": "2024-08-19",
+    "deductible_amount": "$3000",
+    "taxonomy_mode": "Broad Exclusion Misapplication",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10019 for loss on 2024-08-19. Deductible $3000 applies. The loss is denied due to the general deterioration exclusion (Form HO-0304), despite the adjuster noting a sudden pipe burst."
+  },
+  {
+    "case_id": "CASE-20",
+    "claim_number": "CLM-2024-10020",
+    "date_of_loss": "2024-08-20",
+    "deductible_amount": "$1000",
+    "taxonomy_mode": "Numeric Sub-Limit Blindness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10020 for loss on 2024-08-20. Deductible $1000 applies. Payment is capped at the $10,000 per-occurrence sub-limit for water damage."
+  },
+  {
+    "case_id": "CASE-21",
+    "claim_number": "CLM-2024-10021",
+    "date_of_loss": "2024-08-21",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Single-Endorsement Tunnel Vision",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10021 for loss on 2024-08-21. Deductible $1500 applies. Claim denied based on HO-0304, ignoring the overriding coverage provided in HO-0309."
+  },
+  {
+    "case_id": "CASE-22",
+    "claim_number": "CLM-2024-10022",
+    "date_of_loss": "2024-08-22",
+    "deductible_amount": "$2000",
+    "taxonomy_mode": "Definitional Tone Deafness",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10022 for loss on 2024-08-22. Deductible $2000 applies. The summary correctly defines 'Breakdown' according to HO-0308."
+  },
+  {
+    "case_id": "CASE-23",
+    "claim_number": "CLM-2024-10023",
+    "date_of_loss": "2024-08-23",
+    "deductible_amount": "$2500",
+    "taxonomy_mode": "Ambiguity Overconfidence",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10023 for loss on 2024-08-23. Deductible $2500 applies. The summary confidently asserts the loss is fully covered despite missing information about the cause of loss."
+  },
+  {
+    "case_id": "CASE-24",
+    "claim_number": "CLM-2024-10024",
+    "date_of_loss": "2024-08-24",
+    "deductible_amount": "$3000",
+    "taxonomy_mode": "Wrong Form Edition Confusion",
+    "is_regression": false,
+    "summary": "Claim CLM-2024-10024 for loss on 2024-08-24. Deductible $3000 applies. The loss is covered, correctly applying the current 2024 edition rules."
+  },
+  {
+    "case_id": "REG-01",
+    "claim_number": "CLM-2024-10025",
+    "date_of_loss": "2024-08-25",
+    "deductible_amount": "$1000",
+    "taxonomy_mode": "Broad Exclusion Misapplication",
+    "is_regression": true,
+    "summary": "Claim CLM-2024-10025 for loss on 2024-08-25. Deductible $1000 applies. The loss is denied due to the general deterioration exclusion (Form HO-0304), despite the adjuster noting a sudden pipe burst."
+  },
+  {
+    "case_id": "REG-02",
+    "claim_number": "CLM-2024-10026",
+    "date_of_loss": "2024-08-26",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Numeric Sub-Limit Blindness",
+    "is_regression": true,
+    "summary": "Claim CLM-2024-10026 for loss on 2024-08-26. Deductible $1500 applies. Payment is capped at the $10,000 per-occurrence sub-limit for water damage."
+  }
+]
