@@ -818,3 +818,167 @@ We isolated a **Wrong Form Edition Confusion** case where the system retrieved c
 
 **Why the overall average hides this:**
 Faithfulness strictly measures if the generated summary aligns with the *retrieved context*. Because the LLM faithfully summarized the (incorrect) 2022 rules, its Faithfulness was near-perfect (0.95). Averaging this metric across a dataset creates a false sense of security, obscuring the fact that a catastrophic retrieval failure (Context Precision = 0.20) caused the system to be "confidently, faithfully wrong."
+
+---
+
+# Week 7: Agent Loops – and When Not to Use Them (Task Set D)
+
+## 1. Third Tool: `compute_payout` with Typed `ClaimStatus` Enum
+
+To complete the triage loop, a third tool (`compute_payout`) was added to calculate the net settlement amount. It has **exactly one job**, strictly enforces an enum parameter (`ClaimStatus`), and introduces zero description overlap with existing tools (`get_claim`, `get_adjuster_notes`, `search_policy_exclusions`).
+
+### Tool Description Diff
+```diff
+--- a/w7_tools.py (Baseline: 2 Tools)
++++ b/w7_tools.py (Week 7 Extension: 3rd Adjudication Tool)
+@@ -1,15 +1,45 @@
++class ClaimStatus(str, Enum):
++    APPROVED = "APPROVED"
++    PARTIAL_APPROVAL = "PARTIAL_APPROVAL"
++    DENIED = "DENIED"
++    PENDING_INVESTIGATION = "PENDING_INVESTIGATION"
++
+ def get_claim(claim_id: str) -> Dict[str, Any]:
+     """
+     Retrieves policy metadata and initial filing details for a claim (claim ID,
+     policy ID, policyholder name, date of loss, claimed peril, policy form number,
+     base deductible, and claimed amount). Does not retrieve adjuster notes, search
+     policy exclusions, or calculate payouts.
+     """
+     ...
+ 
+ def search_policy_exclusions(policy_form: str, cause_of_loss: str) -> Dict[str, Any]:
+     """
+     Searches policy endorsement exclusion tables to determine whether a specific cause
+     of loss is excluded under a specified policy form. Does not retrieve claim filings,
+     read adjuster notes, or calculate payouts.
+     """
+     ...
++
++def compute_payout(
++    claimed_amount: float,
++    deductible: float,
++    claim_status: ClaimStatus,
++    disallowed_amount: float = 0.0,
++) -> Dict[str, Any]:
++    """
++    Calculates the final payable dollar settlement amount after applying deductible/excess
++    and disallowance deductions strictly according to the adjudicated claim_status enum
++    (APPROVED, PARTIAL_APPROVAL, DENIED, PENDING_INVESTIGATION). Does not inspect policy text,
++    look up claim records, or read adjuster notes.
++    """
++    if claim_status == ClaimStatus.DENIED or claim_status == ClaimStatus.PENDING_INVESTIGATION:
++        payable = 0.00
++    elif claim_status == ClaimStatus.PARTIAL_APPROVAL:
++        base = max(0.0, float(claimed_amount) - float(disallowed_amount))
++        payable = max(0.0, base - float(deductible))
++    elif claim_status == ClaimStatus.APPROVED:
++        base = max(0.0, float(claimed_amount) - float(disallowed_amount))
++        payable = max(0.0, base - float(deductible))
++    return {"payable_amount": round(payable, 2), "claim_status": claim_status}
+```
+
+### Boundary & Non-Overlap Guarantee
+| Tool Name | Dedicated Single Job | Explicit Boundary Restrictions |
+|---|---|---|
+| `get_claim` | Retrieves claim filing metadata & limits | Does NOT read adjuster notes, search exclusions, or calculate money. |
+| `get_adjuster_notes` | Retrieves field findings & root causes | Does NOT check policy forms or compute payouts. |
+| `search_policy_exclusions`| Matches causes against endorsement tables | Does NOT read claim filings or compute settlements. |
+| `compute_payout` | Net arithmetic applying excess & status enum | Does NOT inspect policy text or look up records. |
+
+---
+
+## 2. Fixed Workflow Implementation (Pure 4-Step DAG)
+
+The identical triage task was implemented in `w7_workflow.py` without loops, iterations, or branching agents:
+1. **Step 1 (`get_claim`)**: Pull claim metadata, deductible, and policy form.
+2. **Step 2 (`get_adjuster_notes`)**: Read adjuster findings. If inspection is pending, short-circuit cleanly with `PENDING_INVESTIGATION`.
+3. **Step 3 (`search_policy_exclusions`)**: Use single-pass extraction of the verified adjuster root cause and evaluate policy exclusion tables.
+4. **Step 4 (`compute_payout`)**: Calculate final payable settlement under `ClaimStatus` enum.
+
+Both systems share identical tools, the same model (`gemini-3.5-flash-lite`), and emit the identical Pydantic contract: `ClaimTriageResult`.
+
+---
+
+## 3. Four Enforced Budgets in Agent Loop
+
+All four operational budgets are actively evaluated before every lap in `w7_agent.py`:
+1. `MAX_ITERATIONS` (default: 6)
+2. `MAX_TOKENS` (default: 15,000, summing prompt + candidate tokens across all laps)
+3. `MAX_COST` (default: $0.05 cumulative USD)
+4. `MAX_WALL_CLOCK_SECONDS` (default: 30.0s elapsed wall-clock)
+
+### Budget-Triggered Termination Log Excerpt (`w7_budget_run.log`)
+When budget limits are met, the agent exits cleanly with code 0, avoids runaway spinning, and populates `claim_status="BUDGET_EXCEEDED"`:
+```text
+2026-09-17 19:01:42,908 [INFO] Starting agent loop for claim CLM-2024-7001...
+2026-09-17 19:01:45,640 [INFO] HTTP Request: POST .../generateContent "HTTP/1.1 200 OK"
+2026-09-17 19:01:45,660 [INFO] Lap 1: Agent calling get_claim with {'claim_id': 'CLM-2024-7001'}
+2026-09-17 19:01:45,663 [INFO] Lap 1: Agent calling get_adjuster_notes with {'claim_id': 'CLM-2024-7001'}
+2026-09-17 19:01:45,664 [WARNING] Clean termination triggered: MAX_ITERATIONS budget reached: 1/1
+
+--- AGENT TRIAGE RESULT ---
+{
+  "claim_id": "CLM-2024-7001",
+  "claim_status": "BUDGET_EXCEEDED",
+  "payable_amount": 0.0,
+  "reason": "Terminated cleanly: MAX_ITERATIONS budget reached: 1/1",
+  "passed": false,
+  "tokens_used": 945,
+  "latency_ms": 2756.11
+}
+```
+
+---
+
+## 4. Benchmark Race: Agent vs Fixed Workflow (The 8 Numbers)
+
+Both systems were raced across the same 10 benchmark claims in `run_w7_race.py` (including 5 claims where Step 3 dynamically depends on Step 2 findings, missing-notes cases, and sub-deductible losses).
+
+### Comparable 8-Number Summary Table
+| Metric | Fixed Workflow (4 Steps) | Agent Loop (ReAct) | Delta (Agent / Workflow) |
+|---|---|---|---|
+| **1. Pass Rate** | **90.0%** (9/10) | **90.0%** (9/10) | **+0.0% (Tie)** |
+| **2. p50 Latency** | **980.0 ms** | **3,485.7 ms** | **3.56x slower** |
+| **3. Total Tokens** | **3,461 tokens** | **40,541 tokens** | **11.71x tokens** |
+| **4. Cost per Claim** | **$0.000032** | **$0.000333** | **10.28x cost** |
+
+*Machine-readable details exported in `race.csv`.*
+
+### Per-Claim Breakdown
+| Claim ID | Peril / Dynamic Condition | Ground Truth | Workflow Result | Agent Result |
+|---|---|---|---|---|
+| `CLM-2024-7001` | Sudden pipe burst (HO-0304) | APPROVED ($3,800) | APPROVED ($3,800) [PASS] | APPROVED ($3,800) [PASS] |
+| `CLM-2024-7002` | Notes reveal flood/surface water (E-17) | DENIED ($0) | DENIED ($0) [PASS] | DENIED ($0) [PASS] |
+| `CLM-2024-7003` | Notes reveal 8-mo chronic seepage (E-15) | DENIED ($0) | DENIED ($0) [PASS] | DENIED ($0) [PASS] |
+| `CLM-2024-7004` | Notes reveal unscheduled HVAC (E-28) | DENIED ($0) | DENIED ($0) [PASS] | DENIED ($0) [PASS] |
+| `CLM-2024-7005` | Notes reveal sewer drain backup (E-18) | DENIED ($0) | DENIED ($0) [PASS] | BUDGET_EXCEEDED [FAIL]* |
+| `CLM-2024-7006` | Scheduled boiler power surge (HO-0308) | APPROVED ($5,500) | DENIED ($0) [FAIL]** | APPROVED ($5,500) [PASS] |
+| `CLM-2024-7007` | Burst pipe w/ $2,000 rot disallowed (E-16) | PARTIAL ($4,500) | PARTIAL ($4,500) [PASS] | PARTIAL ($4,500) [PASS] |
+| `CLM-2024-7008` | Covered leak under deductible ($650 < $1k) | APPROVED ($0) | APPROVED ($0) [PASS] | APPROVED ($0) [PASS] |
+| `CLM-2024-7009` | Missing notes / pending inspection | PENDING ($0) | PENDING ($0) [PASS] | PENDING ($0) [PASS] |
+| `CLM-2024-7010` | Lost earring from scheduled pair (E-31) | PARTIAL ($2,000) | PARTIAL ($2,000) [PASS] | PARTIAL ($2,000) [PASS] |
+
+*\* Agent exceeded MAX_WALL_CLOCK budget after searching multiple synonyms and rate limits.*
+*\*\* Fixed workflow single-pass prompt misclassified scheduled equipment as unscheduled.*
+
+---
+
+## 5. Verdict: Applying the Decision Rule
+
+> **Decision Rule Verdict (< 150 words):**
+> Does the execution path vary by input, requiring open-ended exploration that cannot be modeled as a DAG? For 9 of the 10 benchmark claims—including dynamic exclusions (flood, seepage, sewer backup), partial pre-existing rot, below-deductible losses, and pending inspections—the execution path is completely predictable. On these claims, the fixed 4-step workflow achieves identical 90% accuracy while executing **3.56x faster** (p50 980ms vs 3,486ms), consuming **11.7x fewer tokens** (3,461 vs 40,541), and costing **10.3x less** ($0.000032 vs $0.000333/claim). 
+> 
+> The only input class that forces an agent is **ambiguous multi-endorsement scheduled property verification** (e.g., `CLM-2024-7006`), where dynamic equipment schedule cross-referencing dictates whether exclusion checks should be skipped entirely. When input paths do not require backtracking across separate documents, a fixed workflow wins decisively.
+
+---
+
+## 6. Bonus Challenge: 30-Turn Sliding Window & Detail Destruction
+
+Implemented in `w7_bonus.py`:
+1. **Sliding Window + Summarisation**: Agent maintains a 5-turn verbatim sliding window while condensing older turns (1–25) into a rolling summary.
+2. **State Persistence Across Process Restart**: The policy excess amount is written to disk storage (`data/w7_persisted_state.json`). A complete cold restart (`simulate_process_restart()`) clears heap memory, and the excess is reliably rehydrated without re-fetching base policy records.
+3. **Detail Destruction Analysis**:
+   - **Claim Broken**: `CLM-LONG-7002` (Structural basement water damage, $18,000 claimed).
+   - **Destroyed Detail**: In Turn 07, the subcontractor noted: *"Homeowner admitted discovering hairline foundation cracks and slow subfloor seepage 18 months prior to policy inception."*
+   - **Failure Consequence**: Aggressive LLM summarisation abstracted 25 turns into general notes on *"efflorescence, grading inspections, and foundation fractures"*, erasing the homeowner's pre-inception admission. The agent lost the evidence needed to invoke Exclusion E-16 (pre-existing unmaintained conditions), erroneously paying out $16,000 on an excluded loss.
