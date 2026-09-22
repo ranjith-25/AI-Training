@@ -1,0 +1,172 @@
+[
+  {
+    "claim_id": "CLM-2024-7001",
+    "policy_id": "POL-HO-44101",
+    "policyholder": "Arthur Pendelton",
+    "date_of_loss": "2024-01-15",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Water damage from sudden pipe burst",
+    "claimed_amount": 4800.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "Inspection completed on 2024-01-17. Severe sub-zero temperatures caused sudden rupture of 3/4-inch copper supply line in second-floor master bath. Heat was active and maintained at 68F. Sudden and accidental discharge from plumbing system. No pre-existing corrosion. Verified repair estimate: $4,800.00.",
+    "ground_truth": {
+      "status": "APPROVED",
+      "disallowed_amount": 0.00,
+      "payable_amount": 3800.00,
+      "exclusion_clause": null
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7002",
+    "policy_id": "POL-HO-44102",
+    "policyholder": "Beatrice Vance",
+    "date_of_loss": "2024-03-22",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Basement water damage",
+    "claimed_amount": 12000.00,
+    "deductible": 1500.00,
+    "adjuster_notes": "Inspection on 2024-03-25. Basement flooded with 4 inches of water following historic torrential rainfall and river overflow. Water seeped through subterranean foundation walls and floor cracks. No interior plumbing failure or pipe burst detected; water source is rising surface floodwater and hydrostatic groundwater pressure.",
+    "ground_truth": {
+      "status": "DENIED",
+      "disallowed_amount": 12000.00,
+      "payable_amount": 0.00,
+      "exclusion_clause": "HO-0304 E-17"
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7003",
+    "policy_id": "POL-HO-44103",
+    "policyholder": "Charles Montgomery",
+    "date_of_loss": "2024-02-10",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Kitchen ceiling drywall collapse and water staining",
+    "claimed_amount": 8500.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "Inspection on 2024-02-13. Discovered pinhole leak in drain pipe beneath upstairs bathtub. Extensive rot, black mold colonies, and structural timber decay demonstrate water has been continuously leaking and seeping for over 8 months. Not a sudden discharge; chronic unaddressed seepage.",
+    "ground_truth": {
+      "status": "DENIED",
+      "disallowed_amount": 8500.00,
+      "payable_amount": 0.00,
+      "exclusion_clause": "HO-0304 E-15"
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7004",
+    "policy_id": "POL-HO-44104",
+    "policyholder": "Diana Prince",
+    "date_of_loss": "2024-04-05",
+    "policy_form": "HO-0308",
+    "claimed_peril": "HVAC compressor motor failure",
+    "claimed_amount": 5200.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "Inspected on 2024-04-08. Primary 5-ton condenser unit seized due to electrical burnout. Adjuster cross-referenced Schedule A of Endorsement HO-0308 (Equipment Breakdown). The policy schedule lists only the interior geothermal heat pump; this secondary external condenser unit was never scheduled on the endorsement policy.",
+    "ground_truth": {
+      "status": "DENIED",
+      "disallowed_amount": 5200.00,
+      "payable_amount": 0.00,
+      "exclusion_clause": "HO-0308 E-28"
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7005",
+    "policy_id": "POL-HO-44105",
+    "policyholder": "Edward Norton",
+    "date_of_loss": "2024-05-12",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Water backup in basement laundry room",
+    "claimed_amount": 9400.00,
+    "deductible": 1500.00,
+    "adjuster_notes": "Inspection completed 2024-05-15. Municipal storm sewer main overflowed during cloudburst, forcing effluent and sewer water backward through the municipal lateral and erupting out of the basement floor drain. Plumbing system inside dwelling premises intact.",
+    "ground_truth": {
+      "status": "DENIED",
+      "disallowed_amount": 9400.00,
+      "payable_amount": 0.00,
+      "exclusion_clause": "HO-0304 E-18"
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7006",
+    "policy_id": "POL-HO-44106",
+    "policyholder": "Fiona Gallagher",
+    "date_of_loss": "2024-06-01",
+    "policy_form": "HO-0308",
+    "claimed_peril": "Commercial grade boiler control board burnout",
+    "claimed_amount": 6500.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "Inspected 2024-06-03. Severe electrical surge damaged digital control module and safety valves of primary residential boiler unit. Boiler model Serial #BL-9921 is explicitly listed on HO-0308 Schedule of Covered Equipment. No wear and tear; surge occurred during certified grid switching event.",
+    "ground_truth": {
+      "status": "APPROVED",
+      "disallowed_amount": 0.00,
+      "payable_amount": 5500.00,
+      "exclusion_clause": null
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7007",
+    "policy_id": "POL-HO-44107",
+    "policyholder": "George Costanza",
+    "date_of_loss": "2024-06-18",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Dishwasher supply line rupture and kitchen floor damage",
+    "claimed_amount": 7500.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "Inspection on 2024-06-20. PEX connector to dishwasher failed suddenly, flooding kitchen. Sudden damage to hardwood flooring and baseboards equals $5,500.00. However, contractor invoice included $2,000.00 for replacing severely deteriorated, dry-rotted subfloor under adjacent cabinets that predated the loss by years. Adjuster disallows $2,000.00 for pre-existing deterioration.",
+    "ground_truth": {
+      "status": "PARTIAL_APPROVAL",
+      "disallowed_amount": 2000.00,
+      "payable_amount": 4500.00,
+      "exclusion_clause": "HO-0304 E-16"
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7008",
+    "policy_id": "POL-HO-44108",
+    "policyholder": "Hannah Abbott",
+    "date_of_loss": "2024-07-04",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Small bathroom sink pipe leak",
+    "claimed_amount": 650.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "Inspection on 2024-07-06. Sudden rupture of P-trap connector under powder room sink. Total emergency plumber repair invoice is $650.00. Plumber invoice verified and covered. However, the total covered loss of $650.00 is less than the policy deductible of $1,000.00.",
+    "ground_truth": {
+      "status": "APPROVED",
+      "disallowed_amount": 0.00,
+      "payable_amount": 0.00,
+      "exclusion_clause": null
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7009",
+    "policy_id": "POL-HO-44109",
+    "policyholder": "Ian Malcolm",
+    "date_of_loss": "2024-07-20",
+    "policy_form": "HO-0304",
+    "claimed_peril": "Water leaking into dining room wall",
+    "claimed_amount": 5800.00,
+    "deductible": 1000.00,
+    "adjuster_notes": "PENDING_INSPECTION: Field adjuster assigned (T. Sterling) on 2024-07-21. Inspection delayed due to policyholder out of town. No physical inspection performed, no cause of loss established, and no adjuster notes or photographs on file yet.",
+    "ground_truth": {
+      "status": "PENDING_INVESTIGATION",
+      "disallowed_amount": 0.00,
+      "payable_amount": 0.00,
+      "exclusion_clause": null
+    }
+  },
+  {
+    "claim_id": "CLM-2024-7010",
+    "policy_id": "POL-HO-44110",
+    "policyholder": "Julia Roberts",
+    "date_of_loss": "2024-08-02",
+    "policy_form": "HO-0309",
+    "claimed_peril": "Lost diamond earring from matched pair",
+    "claimed_amount": 4000.00,
+    "deductible": 500.00,
+    "adjuster_notes": "Inspection on 2024-08-05. Matched pair of diamond solitaire earrings scheduled on HO-0309 for $4,000.00 total agreed value. One earring lost during travel. Surviving single earring appraised independently at $1,500.00 remaining value. Under Section IV E-31 (Pairs and Sets), insured cannot claim full $4,000.00; loss is difference between pair value ($4,000) and remaining item ($1,500) = $2,500.00 before $500 deductible.",
+    "ground_truth": {
+      "status": "PARTIAL_APPROVAL",
+      "disallowed_amount": 1500.00,
+      "payable_amount": 2000.00,
+      "exclusion_clause": "HO-0309 E-31"
+    }
+  }
+]
