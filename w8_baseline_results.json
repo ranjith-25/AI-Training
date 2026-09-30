@@ -1,0 +1,325 @@
+{
+  "phase": "baseline",
+  "per_claim": [
+    {
+      "claim_id": "CLM-2024-7001",
+      "outcome_passed": true,
+      "trajectory_passed": false,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "compute_payout"
+      ],
+      "tool_sequence_match": false,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 3,
+      "steps_needed": 4,
+      "step_efficiency": 0.75,
+      "failure_modes": [
+        "exclusion_skip"
+      ],
+      "cost_usd": 0.000188,
+      "latency_ms": 32193.21,
+      "tokens_used": 2225,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7001'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7001'})",
+        "compute_payout({'claim_status': 'APPROVED', 'claimed_amount': 4800, 'deductible': 1000})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7002",
+      "outcome_passed": true,
+      "trajectory_passed": true,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "search_policy_exclusions",
+        "compute_payout"
+      ],
+      "tool_sequence_match": true,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 4,
+      "steps_needed": 4,
+      "step_efficiency": 1.0,
+      "failure_modes": [
+        "none"
+      ],
+      "cost_usd": 0.000381,
+      "latency_ms": 118406.95,
+      "tokens_used": 4638,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7002'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7002'})",
+        "search_policy_exclusions({'policy_form': 'HO-0304', 'cause_of_loss': 'flood and surface water'})",
+        "compute_payout({'claimed_amount': 12000, 'deductible': 1500, 'claim_status': 'DENIED', 'disallowed_amount': 12000})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7003",
+      "outcome_passed": true,
+      "trajectory_passed": true,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "search_policy_exclusions",
+        "compute_payout"
+      ],
+      "tool_sequence_match": true,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 4,
+      "steps_needed": 4,
+      "step_efficiency": 1.0,
+      "failure_modes": [
+        "none"
+      ],
+      "cost_usd": 0.000377,
+      "latency_ms": 168979.09,
+      "tokens_used": 4627,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7003'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7003'})",
+        "search_policy_exclusions({'cause_of_loss': 'gradual seepage', 'policy_form': 'HO-0304'})",
+        "compute_payout({'claimed_amount': 8500, 'deductible': 1000, 'claim_status': 'DENIED'})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7004",
+      "outcome_passed": false,
+      "trajectory_passed": false,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes"
+      ],
+      "tool_sequence_match": false,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 2,
+      "steps_needed": 4,
+      "step_efficiency": 0.5,
+      "failure_modes": [
+        "budget_exceeded"
+      ],
+      "cost_usd": 0.000166,
+      "latency_ms": 174056.74,
+      "tokens_used": 2038,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7004'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7004'})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7005",
+      "outcome_passed": false,
+      "trajectory_passed": false,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "search_policy_exclusions"
+      ],
+      "tool_sequence_match": false,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 3,
+      "steps_needed": 4,
+      "step_efficiency": 0.75,
+      "failure_modes": [
+        "budget_exceeded"
+      ],
+      "cost_usd": 0.000266,
+      "latency_ms": 208474.54,
+      "tokens_used": 3258,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7005'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7005'})",
+        "search_policy_exclusions({'cause_of_loss': 'water backup', 'policy_form': 'HO-0304'})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7006",
+      "outcome_passed": true,
+      "trajectory_passed": true,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "compute_payout"
+      ],
+      "tool_sequence_match": true,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 3,
+      "steps_needed": 3,
+      "step_efficiency": 1.0,
+      "failure_modes": [
+        "none"
+      ],
+      "cost_usd": 0.000188,
+      "latency_ms": 47368.31,
+      "tokens_used": 2214,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7006'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7006'})",
+        "compute_payout({'claim_status': 'APPROVED', 'claimed_amount': 6500, 'deductible': 1000})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7007",
+      "outcome_passed": false,
+      "trajectory_passed": false,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes"
+      ],
+      "tool_sequence_match": false,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 2,
+      "steps_needed": 4,
+      "step_efficiency": 0.5,
+      "failure_modes": [
+        "budget_exceeded"
+      ],
+      "cost_usd": 0.000166,
+      "latency_ms": 173048.38,
+      "tokens_used": 2043,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7007'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7007'})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7008",
+      "outcome_passed": true,
+      "trajectory_passed": true,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "compute_payout"
+      ],
+      "tool_sequence_match": true,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 3,
+      "steps_needed": 3,
+      "step_efficiency": 1.0,
+      "failure_modes": [
+        "none"
+      ],
+      "cost_usd": 0.000267,
+      "latency_ms": 216326.51,
+      "tokens_used": 3281,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7008'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7008'})",
+        "compute_payout({'claimed_amount': 650, 'deductible': 1000, 'claim_status': 'APPROVED'})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7009",
+      "outcome_passed": true,
+      "trajectory_passed": true,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "compute_payout"
+      ],
+      "tool_sequence_match": true,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 3,
+      "steps_needed": 3,
+      "step_efficiency": 1.0,
+      "failure_modes": [
+        "none"
+      ],
+      "cost_usd": 0.000268,
+      "latency_ms": 93059.55,
+      "tokens_used": 3271,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7009'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7009'})",
+        "compute_payout({'claim_status': 'PENDING_INVESTIGATION', 'claimed_amount': 5800, 'deductible': 1000})"
+      ]
+    },
+    {
+      "claim_id": "CLM-2024-7010",
+      "outcome_passed": true,
+      "trajectory_passed": false,
+      "tool_sequence": [
+        "get_claim",
+        "get_adjuster_notes",
+        "compute_payout"
+      ],
+      "tool_sequence_match": false,
+      "args_valid": true,
+      "arg_issues": [],
+      "steps_taken": 3,
+      "steps_needed": 4,
+      "step_efficiency": 0.75,
+      "failure_modes": [
+        "exclusion_skip"
+      ],
+      "cost_usd": 0.000276,
+      "latency_ms": 94085.21,
+      "tokens_used": 3352,
+      "raw_steps": [
+        "get_claim({'claim_id': 'CLM-2024-7010'})",
+        "get_adjuster_notes({'claim_id': 'CLM-2024-7010'})",
+        "compute_payout({'disallowed_amount': 1500, 'claim_status': 'PARTIAL_APPROVAL', 'deductible': 500, 'claimed_amount': 4000})"
+      ]
+    }
+  ],
+  "metrics": {
+    "tool_choice_accuracy": 50.0,
+    "argument_validity_rate": 100.0,
+    "step_efficiency_mean": 0.82,
+    "cost_p50": 0.000267,
+    "cost_max": 0.000381,
+    "cost_mean": 0.000254,
+    "latency_p50_ms": 143693.0,
+    "latency_max_ms": 216326.5
+  },
+  "gap": {
+    "outcome_pass_rate": 70.0,
+    "trajectory_pass_rate": 50.0,
+    "gap": 20.0,
+    "right_answer_wrong_path_claims": [
+      {
+        "claim_id": "CLM-2024-7001",
+        "tool_sequence": [
+          "get_claim",
+          "get_adjuster_notes",
+          "compute_payout"
+        ],
+        "failure_modes": [
+          "exclusion_skip"
+        ],
+        "arg_issues": []
+      },
+      {
+        "claim_id": "CLM-2024-7010",
+        "tool_sequence": [
+          "get_claim",
+          "get_adjuster_notes",
+          "compute_payout"
+        ],
+        "failure_modes": [
+          "exclusion_skip"
+        ],
+        "arg_issues": []
+      }
+    ]
+  },
+  "failure_mode_counts": {
+    "exclusion_skip": 2,
+    "wrong_tool_order": 0,
+    "hallucinated_args": 0,
+    "redundant_calls": 0,
+    "budget_exceeded": 3,
+    "none": 5
+  },
+  "top_failure_mode": "budget_exceeded"
+}
