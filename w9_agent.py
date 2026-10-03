@@ -8,7 +8,7 @@ from google.genai import types
 
 def map_mcp_tool_to_gemini(mcp_tool):
     """Convert an MCP tool definition to Gemini's format."""
-    schema = mcp_tool.inputSchema
+    schema = mcp_tool.input_schema
     properties = {}
     required = schema.get("required", [])
     
@@ -44,7 +44,10 @@ def map_mcp_tool_to_gemini(mcp_tool):
         )
     )
 
+from dotenv import load_dotenv
+
 async def main():
+    load_dotenv()
     # Load config
     with open("w9_config.json", "r") as f:
         config = json.load(f)
@@ -83,7 +86,9 @@ async def main():
         print(f"DISCOVERED TOOLS ({len(gemini_funcs)}): {[f.name for f in gemini_funcs]}")
         
         # Now run a simple loop with the LLM
-        client = genai.Client()
+        import os
+        api_key = os.getenv("API_KEY")
+        client = genai.Client(api_key=api_key)
         agent_tool = types.Tool(function_declarations=gemini_funcs)
         
         prompt = "What are the details of claim CLM-2024-7001?"

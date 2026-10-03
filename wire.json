@@ -1,0 +1,99 @@
+{
+  "_annotation_1": "1. INITIALIZE EXCHANGE. The host connects to the MCP server and negotiates protocol versions. The LLM is NOT involved here.",
+  "initialize_request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+      "protocolVersion": "2024-11-05",
+      "capabilities": {},
+      "clientInfo": {
+        "name": "mcp-client",
+        "version": "1.0.0"
+      }
+    }
+  },
+  "initialize_response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+      "protocolVersion": "2024-11-05",
+      "capabilities": {
+        "tools": {}
+      },
+      "serverInfo": {
+        "name": "claims-system",
+        "version": "0.1.0"
+      }
+    }
+  },
+  "_annotation_2": "2. TOOLS/LIST EXCHANGE. The host asks the server what tools it has so it can expose them to the LLM. The LLM is NOT involved here.",
+  "tools_list_request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/list",
+    "params": {}
+  },
+  "tools_list_response": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+      "tools": [
+        {
+          "name": "get_claim",
+          "description": "Retrieve the details of an insurance claim.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "claim_id": {
+                "type": "string",
+                "title": "Claim Id"
+              }
+            },
+            "required": ["claim_id"]
+          }
+        },
+        {
+          "name": "get_adjuster_notes",
+          "description": "Retrieve the adjuster notes for a claim.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "claim_id": {
+                "type": "string",
+                "title": "Claim Id"
+              }
+            },
+            "required": ["claim_id"]
+          }
+        }
+      ]
+    }
+  },
+  "_annotation_3": "3. MODEL CALL: After tool discovery, the host sends the user prompt + tool schemas to Gemini. The model decides to call get_claim.",
+  "_annotation_4": "4. TOOLS/CALL EXCHANGE. Host executes the model's requested tool call against the MCP server. The LLM is NOT involved here; it just waits for the result.",
+  "tools_call_request": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "get_claim",
+      "arguments": {
+        "claim_id": "CLM-2024-7001"
+      }
+    }
+  },
+  "tools_call_response": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{'claim_id': 'CLM-2024-7001', 'policy_id': 'POL-HO-44101', 'policyholder': 'Arthur Pendelton', 'date_of_loss': '2024-01-15', 'policy_form': 'HO-0304', 'claimed_peril': 'Water damage from sudden pipe burst', 'claimed_amount': 4800.0, 'deductible': 1000.0}"
+        }
+      ],
+      "isError": false
+    }
+  }
+}
