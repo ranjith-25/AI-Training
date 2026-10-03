@@ -3,6 +3,10 @@
         "policy-server": {
             "command": ".\\venv\\Scripts\\python.exe",
             "args": ["d:\\AI-Training\\w9_policy_mcp.py"]
+        },
+        "claims-system": {
+            "command": ".\\venv\\Scripts\\python.exe",
+            "args": ["d:\\AI-Training\\w9_claims_mcp.py"]
         }
     }
 }
