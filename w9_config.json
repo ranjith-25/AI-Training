@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "policy-server": {
+            "command": "python",
+            "args": ["d:\\AI-Training\\w9_policy_mcp.py"]
+        }
+    }
+}
