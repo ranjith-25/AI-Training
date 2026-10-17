@@ -232,5 +232,14 @@
     "taxonomy_mode": "Numeric Sub-Limit Blindness",
     "is_regression": true,
     "summary": "Claim CLM-2024-10026 for loss on 2024-08-26. Deductible $1500 applies. Payment is capped at the $10,000 per-occurrence sub-limit for water damage."
+  },
+  {
+    "case_id": "CASE-27",
+    "claim_number": "CLM-2024-10027",
+    "date_of_loss": "2024-09-05",
+    "deductible_amount": "$1500",
+    "taxonomy_mode": "Broad Exclusion Misapplication",
+    "is_regression": true,
+    "summary": "Claim CLM-2024-10027 for loss on 2024-09-05. Deductible $1500 applies. The loss is denied due to sewer or drain backup under Form HO-0304, Section IV exclusion clause E-18."
   }
 ]

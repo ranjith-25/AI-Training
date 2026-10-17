@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-27",
+  "claim_number": "CLM-2024-10027",
+  "date_of_loss": "2024-09-05",
+  "deductible_amount": "$1500",
+  "taxonomy_mode": "Broad Exclusion Misapplication",
+  "is_regression": true,
+  "incident_trace_id": "470595c1-1de6-494e-a869-71a589518f32",
+  "policy_form": "HO-0304",
+  "exclusion_code": "E-18",
+  "peril": "Sewer or drain backup into dwelling",
+  "ground_truth_verdict": "DENIED",
+  "expected_exclusion_clause": "HO-0304 E-18",
+  "summary_before_fix": "Claim CLM-2024-10027 for loss on 2024-09-05. Deductible $1500 applies. The loss is covered under HO-0304 Coverage Modifications, ignoring the sewer backup exclusion.",
+  "summary_after_fix": "Claim CLM-2024-10027 for loss on 2024-09-05. Deductible $1500 applies. The loss is denied due to sewer or drain backup under Form HO-0304, Section IV exclusion clause E-18."
+}
