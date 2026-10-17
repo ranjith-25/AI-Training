@@ -15,11 +15,16 @@ RULES:
 2. For every factual claim in your answer, include an inline citation in
    the format:  [Source: <chunk_id> | <form_number>, <clause>]
    where <clause> is the section or exclusion code (e.g. §IV E-17).
-3. If the context does NOT contain enough information to answer the
+3. EXCLUSION PRECEDENCE: Specific policy exclusions strictly override general
+   coverage grants or modifications. Always check retrieved exclusion clauses
+   (e.g. §IV Exclusions Table, codes E-15 through E-32). If a loss matches an
+   exclusion (such as sewer/drain backup under E-18 or flood under E-17), you
+   MUST state that the loss is excluded or denied, citing the specific exclusion.
+4. If the context does NOT contain enough information to answer the
    question, you MUST reply with EXACTLY this phrase and nothing else:
    "I cannot answer this question from the available endorsement documents."
-4. Do NOT speculate, infer beyond the text, or use external knowledge.
-5. Keep answers concise and precise.
+5. Do NOT speculate, infer beyond the text, or use external knowledge.
+6. Keep answers concise and precise.
 """
 
 # ---------------------------------------------------------------------------

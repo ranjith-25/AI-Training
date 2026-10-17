@@ -74,6 +74,29 @@ def prompt_version_hash(prompt_text: str) -> str:
 # Trace record
 # ---------------------------------------------------------------------------
 
+def _extract_decision(raw_output: str, refused: bool) -> str:
+    if refused:
+        return "REFUSED"
+    lower = raw_output.lower()
+    if re.search(r"\b(denied|exclusion|excluded|not covered)\b", lower):
+        return "DENIED"
+    if re.search(r"\b(partial|partially covered|disallowed)\b", lower):
+        return "PARTIAL"
+    if re.search(r"\b(is covered|fully covered|covered according)\b", lower):
+        return "COVERED"
+    return "INFORMATIONAL"
+
+def _has_exclusion_chunk(retrieved_chunks: List[Dict[str, Any]]) -> bool:
+    for c in retrieved_chunks:
+        sec = str(c.get("section", "")).upper()
+        if "EXCLUSION" in sec:
+            return True
+    return False
+
+def _extract_cited_exclusion(raw_output: str) -> Optional[str]:
+    m = re.search(r"\b(E-\d{2}|HO-\d{4}\s+E-\d{2}|Exclusion\s+\d+)\b", raw_output, re.IGNORECASE)
+    return m.group(1).upper() if m else None
+
 def build_trace(
     question: str,
     strategy: str,
@@ -86,7 +109,8 @@ def build_trace(
     refused: bool,
     latency_ms: float,
 ) -> Dict[str, Any]:
-    """Build a trace dict with a fresh trace_id and redacted fields."""
+    """Build a trace dict with a fresh trace_id, redacted fields, and structured decision indexing."""
+    cleaned_output = _redact(raw_output or "")
     return {
         "trace_id": str(uuid.uuid4()),
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -105,7 +129,10 @@ def build_trace(
         "prompt_version": prompt_version_hash(prompt_text),
         "model": model,
         "model_params": model_params or {"temperature": "default", "top_p": "default"},
-        "raw_output": _redact(raw_output or ""),
+        "raw_output": cleaned_output,
+        "coverage_decision": _extract_decision(cleaned_output, refused),
+        "has_exclusion_in_context": _has_exclusion_chunk(retrieved_chunks),
+        "cited_exclusion": _extract_cited_exclusion(cleaned_output),
         "refused": refused,
         "latency_ms": round(latency_ms, 1),
     }

@@ -1,0 +1,109 @@
+{
+  "trace_id": "470595c1-1de6-494e-a869-71a589518f32",
+  "timestamp": "2026-09-05T14:45:39.346677+00:00",
+  "question": "Under HO-0304 ed. 03-24, if a sewer backs up into the dwelling, is the damage covered?",
+  "strategy": "structure_aware",
+  "filter": {},
+  "prompt_version": "063dfdb279f4",
+  "model": "gemini-3.6-flash",
+  "model_params": {
+    "temperature": "default",
+    "top_p": "default"
+  },
+  "raw_output": "Yes, this is covered according to the policy terms. [Source: HO-0304_struct_002 | HO-0304, COVERAGE MODIFICATIONS]",
+  "refused": false,
+  "retrieved_context_ids": [
+    "HO-0304_struct_002",
+    "HO-0304_struct_003",
+    "HO-0304_struct_000",
+    "HO-0304_struct_hdr",
+    "HO-0304_struct_001"
+  ],
+  "retrieved_chunks": [
+    {
+      "chunk_id": "HO-0304_struct_002",
+      "score": 0.8834,
+      "form_number": "HO-0304",
+      "section": "COVERAGE MODIFICATIONS"
+    },
+    {
+      "chunk_id": "HO-0304_struct_003",
+      "score": 0.8797,
+      "form_number": "HO-0304",
+      "section": "EXCLUSIONS TABLE"
+    },
+    {
+      "chunk_id": "HO-0304_struct_000",
+      "score": 0.8781,
+      "form_number": "HO-0304",
+      "section": "SCOPE AND PURPOSE"
+    },
+    {
+      "chunk_id": "HO-0304_struct_hdr",
+      "score": 0.8752,
+      "form_number": "HO-0304",
+      "section": "HEADER"
+    },
+    {
+      "chunk_id": "HO-0304_struct_001",
+      "score": 0.8745,
+      "form_number": "HO-0304",
+      "section": "DEFINITIONS"
+    }
+  ],
+  "spans": [
+    {
+      "span_id": "span-retrieval-embed",
+      "stage": "retrieval",
+      "sub_operation": "query_embedding",
+      "model": "gemini-embedding-001",
+      "latency_ms": 85.0,
+      "tokens": {
+        "input": 21,
+        "output": 0,
+        "total": 21
+      },
+      "cost_usd": 0.00000042
+    },
+    {
+      "span_id": "span-retrieval-search",
+      "stage": "retrieval",
+      "sub_operation": "mongodb_atlas_vector_search",
+      "latency_ms": 45.0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "total": 0
+      },
+      "cost_usd": 0.00000000
+    },
+    {
+      "span_id": "span-generation-llm",
+      "stage": "generation",
+      "sub_operation": "generate_content",
+      "model": "gemini-3.6-flash",
+      "latency_ms": 371.5,
+      "tokens": {
+        "input": 1120,
+        "output": 28,
+        "total": 1148
+      },
+      "cost_usd": 0.00009240
+    },
+    {
+      "span_id": "span-tools-execution",
+      "stage": "tools",
+      "sub_operation": "agent_tools",
+      "latency_ms": 0.0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "total": 0
+      },
+      "cost_usd": 0.00000000
+    }
+  ],
+  "total_latency_ms": 501.5,
+  "total_tokens": 1169,
+  "total_cost_usd": 0.00009282
+}
