@@ -413,3 +413,56 @@
 
     **A:**  
     I ship the single-agent system. A single agent is simpler to debug, cheaper to operate, faster to respond, and easier to maintain. You should only adopt multi-agent complexity when measurable accuracy or capability gains justify the overhead.
+
+## Week 11: Production Observability, Cost & the Failure-Test Loop
+
+1. **Q:** What is the "Failure-Test Loop", and why must an eval case be observed failing (RED) before applying a fix?
+
+   **A:**  
+   The Failure-Test Loop is the discipline of converting any real-world production incident or edge-case failure into a permanent, automated evaluation case before modifying production code. You must watch the eval case fail (RED) before applying the fix to prove that the test actually detects the failure mode. A test that has only ever been green is a test that has never been validated, creating false confidence.
+
+2. **Q:** When debugging an incident where a user complains "the assistant gave a wrong answer", why is searching input queries alone often a mistake?
+
+   **A:**  
+   Users and adjusters describe what the system *said* or output (e.g., "it said the claim was covered"), not the input prompt. Real users ask standard, neutral questions (e.g., "Is sewer backup damage covered?"), so searching inputs for terms like "excluded" or "denied" yields zero hits. Both inputs and outputs must be indexed so you can slice logs by the generated verdict or failure symptoms.
+
+3. **Q:** Why is logging retrieved context IDs (chunk IDs) essential for diagnosing RAG failures?
+
+   **A:**  
+   Logging chunk IDs provides a "one-hop diagnosis" that instantly isolates whether a failure occurred in the retrieval layer or the generation layer. If the chunk containing the required policy rule is absent from the retrieved IDs, it is a retrieval failure (e.g., bad chunking or vector search ranking). If the chunk ID was retrieved in the top-k but the answer was still wrong, it is a generation/prompting failure where the model overlooked or misreasoned over provided context.
+
+4. **Q:** What is the operational danger of relying on free-text regexes across raw logs during an incident drill, and how do you "wire the drill shut"?
+
+   **A:**  
+   Searching through gigabytes of raw JSONL with regular expressions is slow, brittle, and burns critical response time under pressure. You "wire the drill shut" by promoting frequently queried failure patterns into structured, indexed log metadata fields—such as `coverage_decision` (`COVERED`, `DENIED`, `REFUSED`), `has_exclusion_in_context`, and `cited_exclusion`—turning a multi-minute manual scan into an instant (< 20 second) structured query.
+
+5. **Q:** Why must Personally Identifiable Information (PII) be redacted *on write* before persisting traces, rather than cleaned asynchronously later?
+
+   **A:**  
+   PII (names, claim numbers, policy IDs, SSNs, phone numbers) must be redacted inline before records touch the disk because "we will clean it later" pipelines inevitably suffer delays, leaks, or ingestion failures. Once unredacted PII enters raw logs, debugging drills and log exports violate compliance (e.g., HIPAA, GDPR, GLBA), and scrubbing persisted logs across backups and distributed search clusters is prohibitively complex.
+
+6. **Q:** Why should prompt versions in production observability be tracked using cryptographic content hashes (e.g., SHA-256) rather than manual version strings?
+
+   **A:**  
+   Manual version numbers (e.g., "v1.2") depend on human discipline, are easily forgotten during hotfixes, and can drift across staging and production environments. A truncated SHA-256 hash derived directly from the canonical system prompt string ensures an immutable, tamper-proof fingerprint. If a single character changes, the hash changes, guaranteeing exact reproducibility and zero ambiguity when correlating traces with prompt iterations.
+
+7. **Q:** Why is it critical to attribute costs by stage (retrieval, generation, tools) *before* executing cost optimization initiatives?
+
+   **A:**  
+   Without stage-by-stage attribution, engineering effort is often wasted on components with negligible financial impact. For instance, in a typical RAG query, vector search and query embedding may account for 25% of total latency but less than 0.5% of total cost, while LLM generation accounts for over 99% of the bill. Optimizing embeddings saves fractions of a cent; cost reduction must target prompt input token count and model selection.
+
+8. **Q:** What is a canary release strategy for an LLM prompt or retrieval update, and how does a rollback plan operate?
+
+   **A:**  
+   A canary release routes a small percentage of live production traffic (e.g., 5%) to the new prompt version or retrieval index via dynamic feature flags, while monitoring key operational guardrails—such as refusal rate spikes, citation resolution failures, latency anomalies, or 5xx errors—over a bake period (e.g., 30 minutes) before incrementing rollout. A rollback plan provides an immediate, zero-downtime escape hatch: if guardrails breach, the feature flag is toggled back to the previous stable hash without redeploying code.
+
+9. **Q:** At 10x query volume, what typically breaks first in an LLM pipeline—cost, latency, or rate limits—and why?
+
+   **A:**  
+   Rate limits break first. While financial cost scales linearly and remains modest for enterprise budgets (e.g., scaling from $5/day to $53/day), and async non-blocking architectures maintain steady p50 latency, provider throughput quotas (Tokens Per Minute and Requests Per Minute) are hard ceilings. At 10x volume, token consumption routinely breaches provider tier caps (e.g., exceeding 1,000,000 TPM), immediately triggering HTTP 429 (`RESOURCE_EXHAUSTED`) outages unless quotas are pre-provisioned or load is distributed.
+
+10. **Q:** When fixing a model failure on a specific edge case, why must the entire regression test suite be re-run?
+
+    **A:**  
+    LLM prompts and reasoning paths are highly interconnected; adjusting a system prompt or retrieval policy to fix one failure mode (such as enforcing exclusion precedence) can inadvertently break previously working functionality (such as deductible threshold calculations or partial disallowances). Re-running the full evaluation suite ensures that closing one defect does not introduce silent regressions elsewhere, confirming that the overall pass rate strictly improves (e.g., moving from 9/11 to 11/11).
+
